@@ -140,7 +140,7 @@ p {
   color: #FBF0E3;
 }
 
-.heading--sub {
+.heading--primary-dark {
   opacity: .5;
   color: #000;
   margin:-1rem 0 0 0;
@@ -212,9 +212,6 @@ p {
 }
 
 @media (max-width : 768px) {
-  .header {
-    height: 75vh;
-  }
   .header__text-box {
     top: 14rem;
     margin: 0 auto;
@@ -225,17 +222,35 @@ p {
   .background-slide {
     width: 110vw;
   }
-  .heading--sub {
-    font-size: 2rem;
-  }
   .heading--primary {
-    font-size: 3rem;
+    font-size:2.5rem;
   }
   .heading--hey {
-    font-size: 13rem;
+    font-size: 10rem;
   }
-  .content {
-    top: 75vh;
+
+  .header__personal-photo-box {
+    top: 5rem;
+  }
+
+  .header__personal-photo {
+    width: 16rem;
+  }
+
+  .header__personal-photo-box__big-blur {
+    top: 2rem;
+  }
+
+  .header__personal-photo__big-blur {
+    width: 20.2rem;
+  }
+
+  .header__personal-photo-box__small-blur {
+    top: 12rem;
+  }
+
+  .header__personal-photo__small-blur {
+    width: 6rem;
   }
 }
 
