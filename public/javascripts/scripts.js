@@ -3,27 +3,19 @@
 
 //Animate in the text
 anime({
-  targets: '.slide-up-hey',
-  keyframes: [
-    {translateY: "101%", duration: 0, opacity: 0, rotateZ: 1},
-    {translateY: 0, delay: 2400, duration: 1800, opacity: 1, rotateZ: 0, easing: 'easeOutQuad'} //easeOutElastic
-  ],
-});
-
-anime({
   targets: '.slide-up-content',
   keyframes: [
-    {translateY: "100px", duration: 0, opacity: 0, rotateZ: 1},
-    {translateY: 0, delay: 2800, duration: 1700, opacity: 1, rotateZ: 0, easing: 'easeOutQuad'} //easeOutElastic
+    {translateY: "105%", duration: 0, opacity: 0, rotateZ: 1},
+    {translateY: 0, delay: 2800, duration: 1400, opacity: 1, rotateZ: 0, easing: 'easeOutQuad'} //easeOutElastic
   ],
-  delay: anime.stagger(900)
+  delay: anime.stagger(300)
 });
 
 anime({
   targets: '.night-mode',
   keyframes: [
     {translateY: "-105%", duration: 0, opacity: 0, rotateZ: 5},
-    {translateY: 0, delay: 4000, duration: 1500, opacity: 1, rotateZ: 0, easing: 'easeOutQuad'} //easeOutElastic
+    {translateY: 0, delay: 2000, duration: 1500, opacity: 1, rotateZ: 0, easing: 'easeOutQuad'} //easeOutElastic
   ],
   delay: anime.stagger(1000)
 });
@@ -82,4 +74,13 @@ anime({
   easing: 'easeOutSine',
   //easing: 'cubicBezier(0.090, 0.415, 0.365, 1.205)',
   delay: anime.stagger(100, {start: 2200})
+});
+
+anime({
+  targets: '.triangle',
+  translateY: 50,
+  duration: 1400,
+  endDelay: 2000,
+  direction: 'alternate',
+  loop: true
 });

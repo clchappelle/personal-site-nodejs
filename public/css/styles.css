@@ -11,9 +11,7 @@ html {
 }
 
 body {
-  /* font-family: 'Noticia Text', serif; */
   font-family: 'Work Sans', sans-serif;
-  /* font-family: 'Rubik', sans-serif; */
   background-color: #F7F3F0;
   box-sizing: border-box;
 }
@@ -40,25 +38,19 @@ p {
 
 /* Header */
 .header {
-  height: 90vh;
+  height: 95vh;
+  width: 100vw;
   position: fixed;
   top: 0;
   overflow: hidden;
-}
-
-.header::after {
-  content: "";
-  clear: both;
-  display: table;
+  background: #FBF0E3;
 }
 
 /* Grid in header bg */
 
 .header__background-grid-wrapper {
-  width: 100vw;
   height: 95vh;
-  overflow: hidden;
-  position: absolute;
+  position: relative;
 }
 
 .header__background-grid {
@@ -69,10 +61,8 @@ p {
 }
 
 .header__background-grid-square {
-  position: relative;
   width: 4rem;
   height: 4rem;
-  margin: 0rem;
   background-color: rgba(0,0,0,.05);
 }
 
@@ -85,7 +75,7 @@ p {
   }
 }
 
-/* Header photo and titles */
+/* Header photo */
 
 .header__personal-photo-box {
   position: absolute;
@@ -95,8 +85,6 @@ p {
 
 .header__personal-photo {
   width: 20rem;
-  /* animation: photo-blur 1s infinite alternate ease-in-out; */
-  /* backface-visibility: hidden; */
 }
 
 .header__personal-photo-box__big-blur {
@@ -120,48 +108,113 @@ p {
 }
 
 .background-slide {
-  background-color: #2536EA;
+  background-color: #085744; /* #FDDC4C; */
   width: 100vw;
   height: 95vh;
   position: absolute;
   right: 0;
+  top:0;
 }
 
+/* Header titles */
+
 .header__text-box {
-  width: 50%;
-  position: relative;
-  top: 4rem;
+  width: 90%;
+  position: absolute;
+  top: 12rem;
   left: 22rem;
 }
 
 .heading--primary {
-  font-size: 4rem;
+  font-size: 18rem;
   font-weight: 800;
-  color: #FBF0E3;
-}
-
-.heading--primary-dark {
-  opacity: .5;
+  line-height: 1.2;
   color: #000;
-  margin:-1rem 0 0 0;
-}
-
-.heading--hey {
-  font-size: 20rem;
-  font-weight: 800;
-  line-height: 1.5;
-  color: #FBF0E3;
 }
 
 
-.slide-up-wrapper, .slide-up-content, .slide-up-hey, .slide-down-content {
+.slide-up-wrapper, .slide-up-content, .slide-down-content {
   display: block;
 }
 
 .slide-up-wrapper {
+  margin-top: -10rem;
   overflow: hidden;
 }
 
+.slide-up-wrapper--group-two {
+  margin-top: 8rem;
+  position: absolute;
+  right: 20%;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 60px solid #fff;
+  position: absolute;
+  left: calc(10vw - 40px);
+  bottom: 10rem;
+}
+
+
+
+@media (max-width : 900px) {
+  .heading--primary {
+    font-size: 15rem;
+  }
+  .slide-up-wrapper {
+    margin-top: -8rem;
+  }
+}
+
+@media (max-width : 768px) {
+  .header__text-box {
+    top: 25rem;
+    margin: 0 30px;
+    left: 0;
+    width: 100%;
+  }
+  .background-slide {
+    width: 110vw;
+  }
+  .heading--primary {
+    font-size: 12rem;
+  }
+  .slide-up-wrapper {
+    margin-top: -6rem;
+  }
+  .heading--shift-right {
+    left: 0;
+  }
+  .triangle {
+    left: calc(80vw - 40px);
+  }
+}
+
+@media (max-width : 530px) {
+  .header__text-box {
+    top: 30rem;
+  }
+  .heading--primary {
+    font-size: 8rem;
+  }
+  .slide-up-wrapper {
+    margin-top: -4rem;
+  }
+  .slide-up-wrapper--group-two {
+    left: 0;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width : 320px) {
+  .header__text-box {
+    padding: 0 30px;
+  }
+}
 
 /* Night mode link */
 
@@ -187,9 +240,10 @@ p {
 /* Main content */
 
 .content {
-  position: relative;
+  position: absolute;
+  width: 100%;
   background: white;
-  top: 90vh;
+  top: 95vh;
   padding: 10rem 0;
 }
 
@@ -200,62 +254,4 @@ p {
 
 .post__title {
   margin-bottom: 1rem;
-}
-
-@media (max-width : 1300px) {
-  .header__text-box {
-    width: 70%;
-  }
-  /* .heading--primary {
-    font-size: 4.5rem;
-  } */
-}
-
-@media (max-width : 768px) {
-  .header__text-box {
-    top: 14rem;
-    margin: 0 auto;
-    left: 0;
-    width: 100%;
-    padding: 0 30px;
-  }
-  .background-slide {
-    width: 110vw;
-  }
-  .heading--primary {
-    font-size:2.5rem;
-  }
-  .heading--hey {
-    font-size: 10rem;
-  }
-
-  .header__personal-photo-box {
-    top: 5rem;
-  }
-
-  .header__personal-photo {
-    width: 16rem;
-  }
-
-  .header__personal-photo-box__big-blur {
-    top: 2rem;
-  }
-
-  .header__personal-photo__big-blur {
-    width: 20.2rem;
-  }
-
-  .header__personal-photo-box__small-blur {
-    top: 12rem;
-  }
-
-  .header__personal-photo__small-blur {
-    width: 6rem;
-  }
-}
-
-@media (max-width : 320px) {
-  .header__text-box {
-    padding: 0 30px;
-  }
 }
