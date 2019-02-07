@@ -36,6 +36,27 @@ p {
   margin-bottom: 2rem;
 }
 
+a:link,
+a:visited {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+}
+
+
+a:hover,
+a:active {
+
+}
+
+.link-underline {
+  display: inline-block;
+  position: relative;
+  box-shadow:
+    inset 0 -0.1em white,
+    inset 0 -0.4em #FDDC4C;
+}
+
 /* Header */
 .header {
   height: 95vh;
@@ -244,8 +265,43 @@ p {
   width: 100%;
   background: white;
   top: 95vh;
-  padding: 10rem 0;
+  padding: 10rem 3rem;
 }
+
+.about {
+  display: table;
+  clear: both;
+  content: '';
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.about__bio {
+  width: 65%;
+  float: right;
+}
+
+.about__contact {
+  float: left;
+}
+
+.about__contact__item {
+  margin-bottom: 2rem;
+}
+
+.about__contact__item p {
+  margin-bottom: 0;
+}
+
+@media (max-width : 768px) {
+  .about__bio {
+    width: 100%;
+  }
+  .about__contact {
+    width: 100%
+  }
+}
+
 
 .post {
   max-width: 80rem;
