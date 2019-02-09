@@ -142,25 +142,31 @@ a:active {
 .header__text-box {
   width: 90%;
   position: absolute;
-  top: 12rem;
+  top: 18rem;
   left: 22rem;
 }
 
 .heading--primary {
   font-size: 18rem;
   font-weight: 800;
-  line-height: 1.2;
   color: #000;
 }
 
 
-.slide-up-wrapper, .slide-up-content, .slide-down-content {
+.slide-up-wrapper {
   display: block;
+  margin-top: -11rem;
 }
 
-.slide-up-wrapper {
-  margin-top: -10rem;
+.letter-wrapper {
+  display: inline-block;
   overflow: hidden;
+  line-height: 1.2;
+  margin-top: -12rem;
+}
+
+.letter {
+  display: inline-block;
 }
 
 .slide-up-wrapper--group-two {
@@ -193,7 +199,7 @@ a:active {
 
 @media (max-width : 768px) {
   .header__text-box {
-    top: 25rem;
+    top: 30rem;
     margin: 0 30px;
     left: 0;
     width: 100%;

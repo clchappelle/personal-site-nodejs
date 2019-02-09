@@ -2,13 +2,20 @@
 
 
 //Animate in the text
+
+// Wrap every letter in a span
+$('.slide-up-wrapper').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x222]|\w)/g, "<span class='letter-wrapper'><span class='letter'>$&</span></span>"));
+});
+
+
 anime({
-  targets: '.slide-up-content',
+  targets: '.letter',
   keyframes: [
-    {translateY: "105%", duration: 0, opacity: 0, rotateZ: 1},
-    {translateY: 0, delay: 2800, duration: 1400, opacity: 1, rotateZ: 0, easing: 'easeOutQuad'} //easeOutElastic
+    {translateX: "105%", duration: 0, opacity: 0, rotateZ: 1},
+    {translateX: 0, delay: 2400, duration: 800, opacity: 1, rotateZ: 0, easing: 'easeOutQuad'} //easeOutElastic
   ],
-  delay: anime.stagger(300)
+  delay: anime.stagger(30)
 });
 
 anime({
@@ -54,17 +61,12 @@ anime({
   {translateX: '-100vw', duration: 0},
   {translateX: '0', duration: 1000},
   {translateX: '10vw', duration: 800}
-  // {translateY: '150vh', rotateZ: -10, opacity:0, scale:0, duration: 0},
-  // {translateY: '0', rotateZ: 0, opacity:1, scale:1, duration: 1000}
   ],
-  //easing: 'easeOutSine',
-  //easing: 'spring(1, 90, 30, 0)',
   easing: 'cubicBezier(.17,.67,.5,1)',
   delay: anime.stagger(50, {start: 1600})
 });
 
 //Animate in headshot
-
 anime({
   targets: '.header__personal-photo-box, .header__personal-photo-box__big-blur, .header__personal-photo-box__small-blur',
   keyframes: [
@@ -76,9 +78,19 @@ anime({
   delay: anime.stagger(100, {start: 2200})
 });
 
+//animate the arrow
 anime({
   targets: '.triangle',
-  translateY: 50,
+  keyframes: [
+    {opacity: 0},
+    {opacity: 1, delay: 2400, easing: 'easeOutQuad'}
+  ],
+  duration: 1400
+});
+
+anime({
+  targets: '.triangle',
+  translateY: -25,
   duration: 1400,
   endDelay: 2000,
   direction: 'alternate',
