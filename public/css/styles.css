@@ -243,26 +243,6 @@ a:active {
   }
 }
 
-/* Night mode link */
-
-.night-mode:link,
-.night-mode:visited{
-  color: rgba(255,255,255,.7);
-  text-decoration: none;
-  font-size: 1.4em;
-  padding: 8px 12px;
-  background-color: rgba(0,0,0,.3);
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border-radius: 50px;
-  transition: color .4s;
-}
-
-.night-mode:hover {
-  color: rgba(255,255,255,.9);
-}
-
 
 /* Main content */
 

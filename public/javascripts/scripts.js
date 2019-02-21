@@ -18,16 +18,6 @@ anime({
   delay: anime.stagger(30)
 });
 
-anime({
-  targets: '.night-mode',
-  keyframes: [
-    {translateY: "-105%", duration: 0, opacity: 0, rotateZ: 5},
-    {translateY: 0, delay: 2000, duration: 1500, opacity: 1, rotateZ: 0, easing: 'easeOutQuad'} //easeOutElastic
-  ],
-  delay: anime.stagger(1000)
-});
-
-
 // Background Grid animation
 const numberOfColumns = Math.floor( (document.documentElement.clientWidth / 40) );
 const numberOfRows = Math.floor( (document.documentElement.clientHeight / 40) );
