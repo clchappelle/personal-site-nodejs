@@ -12,7 +12,7 @@ $('.text-animate-wrapper').each(function(){
 anime({
   targets: '.letter',
   keyframes: [
-    {translateX: "105%", duration: 0, opacity: 0, rotateZ: 1},
+    {translateX: "-105%", duration: 0, opacity: 0, rotateZ: 1},
     {translateX: 0, delay: 2400, duration: 800, opacity: 1, rotateZ: 0, easing: 'easeOutQuad'} //easeOutElastic
   ],
   delay: anime.stagger(30)
