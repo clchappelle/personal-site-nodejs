@@ -237,6 +237,28 @@ a:active {
   }
 }
 
+@media (max-width: 375px) {
+  .header__personal-photo {
+    width: 14rem;
+  }
+
+  .header__personal-photo__big-blur {
+    width: 18.2rem;
+  }
+
+  .header__personal-photo__small-blur {
+    width: 4rem;
+  }
+
+  .header__text-box {
+    top: 25rem;
+  }
+
+  .triangle {
+    bottom: 5rem;
+  }
+}
+
 @media (max-width : 320px) {
   .header__text-box {
     padding: 0 30px;
