@@ -4,7 +4,7 @@
 //Animate in the text
 
 // Wrap every letter in a span
-$('.slide-up-wrapper').each(function(){
+$('.text-animate-wrapper').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x222]|\w)/g, "<span class='letter-wrapper'><span class='letter'>$&</span></span>"));
 });
 

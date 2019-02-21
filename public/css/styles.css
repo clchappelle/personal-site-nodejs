@@ -153,7 +153,7 @@ a:active {
 }
 
 
-.slide-up-wrapper {
+.text-animate-wrapper {
   display: block;
   margin-top: -11rem;
 }
@@ -169,7 +169,7 @@ a:active {
   display: inline-block;
 }
 
-.slide-up-wrapper--group-two {
+.text-animate-wrapper--group-two {
   margin-top: 8rem;
   position: absolute;
   right: 20%;
@@ -192,7 +192,7 @@ a:active {
   .heading--primary {
     font-size: 15rem;
   }
-  .slide-up-wrapper {
+  .text-animate-wrapper {
     margin-top: -8rem;
   }
 }
@@ -210,7 +210,7 @@ a:active {
   .heading--primary {
     font-size: 12rem;
   }
-  .slide-up-wrapper {
+  .text-animate-wrapper {
     margin-top: -6rem;
   }
   .heading--shift-right {
@@ -228,10 +228,10 @@ a:active {
   .heading--primary {
     font-size: 8rem;
   }
-  .slide-up-wrapper {
+  .text-animate-wrapper {
     margin-top: -4rem;
   }
-  .slide-up-wrapper--group-two {
+  .text-animate-wrapper--group-two {
     left: 0;
     margin-top: 4rem;
   }
