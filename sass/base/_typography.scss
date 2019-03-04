@@ -1,0 +1,45 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5 {
+  color: #000;
+}
+
+h1 {
+  font-size: 8rem;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 6rem;
+  line-height: 1.25;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+a:link,
+a:visited {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+}
+
+
+a:hover,
+a:active {
+
+}
+
+.link-underline {
+  display: inline-block;
+  position: relative;
+  box-shadow:
+    inset 0 -0.1em white,
+    inset 0 -0.4em #FDDC4C;
+}

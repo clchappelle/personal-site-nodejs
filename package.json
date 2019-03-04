@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "compile:sass": "node-sass sass/main.scss public/css/styles.css -w"
   },
   "author": "Chris Chappelle",
   "license": "ISC",
@@ -13,5 +14,8 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0"
   }
 }
