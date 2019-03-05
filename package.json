@@ -5,8 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "setup" : "mkdir /tmp/deployment/application/node_modules/node-sass/vendor/linux-x64-64"
+    "compile:sass": "node-sass sass/main.scss public/css/styles.css -w",
     "start": "node app.js",
-    "compile:sass": "node-sass sass/main.scss public/css/styles.css -w"
   },
   "author": "Chris Chappelle",
   "license": "ISC",
