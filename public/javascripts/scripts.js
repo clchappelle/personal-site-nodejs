@@ -59,12 +59,12 @@ anime({
 anime({
   targets: '.header__personal-photo-box',
   keyframes: [
-  {translateX: '-25rem', duration: 0, opacity: 0},
-  {translateX: '0rem', opacity: 1, duration: 1000}
+  {translateX: '-25rem', duration: 0, opacity: 1},
+  {translateX: '0rem', opacity: 1, duration: 900}
   ],
   easing: 'easeOutQuad',
   // easing: 'cubicBezier(0.090, 0.415, 0.65, 1.1)',
-  delay: anime.stagger(100, {start: 2700})
+  delay: anime.stagger(100, {start: 2400})
 });
 
 //animate the arrow
