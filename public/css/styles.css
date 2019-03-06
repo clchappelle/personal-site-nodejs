@@ -76,27 +76,11 @@ a:visited {
 /* Header photo */
 .header__personal-photo-box {
   position: absolute;
-  top: 7rem;
-  left: 4rem; }
+  top: 3rem;
+  left: 0rem; }
 
 .header__personal-photo {
-  width: 20rem; }
-
-.header__personal-photo-box__big-blur {
-  position: absolute;
-  top: 4rem;
-  left: 3rem; }
-
-.header__personal-photo__big-blur {
-  width: 24.2rem; }
-
-.header__personal-photo-box__small-blur {
-  position: absolute;
-  top: 14rem;
-  left: 18rem; }
-
-.header__personal-photo__small-blur {
-  width: 10rem; }
+  width: 25rem; }
 
 .background-slide {
   background-color: #085744;
@@ -154,6 +138,8 @@ a:visited {
     margin-top: -8rem; } }
 
 @media (max-width: 768px) {
+  .header__personal-photo {
+    width: 20rem; }
   .header__text-box {
     top: 30rem;
     margin: 0 30px;
@@ -184,10 +170,6 @@ a:visited {
 @media (max-width: 375px) {
   .header__personal-photo {
     width: 14rem; }
-  .header__personal-photo__big-blur {
-    width: 18.2rem; }
-  .header__personal-photo__small-blur {
-    width: 4rem; }
   .header__text-box {
     top: 23rem; }
   .triangle {

@@ -8,7 +8,6 @@ $('.text-animate-wrapper').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x222]|\w)/g, "<span class='letter-wrapper'><span class='letter'>$&</span></span>"));
 });
 
-
 anime({
   targets: '.letter',
   keyframes: [
@@ -58,14 +57,14 @@ anime({
 
 //Animate in headshot
 anime({
-  targets: '.header__personal-photo-box, .header__personal-photo-box__big-blur, .header__personal-photo-box__small-blur',
+  targets: '.header__personal-photo-box',
   keyframes: [
-  {translateX: '-30rem', duration: 0, opacity: 0},
-  {translateX: '0', opacity: 1, duration: 1100}
+  {translateX: '-25rem', duration: 0, opacity: 0},
+  {translateX: '0rem', opacity: 1, duration: 1000}
   ],
-  easing: 'easeOutSine',
-  //easing: 'cubicBezier(0.090, 0.415, 0.365, 1.205)',
-  delay: anime.stagger(100, {start: 2200})
+  easing: 'easeOutQuad',
+  // easing: 'cubicBezier(0.090, 0.415, 0.65, 1.1)',
+  delay: anime.stagger(100, {start: 2700})
 });
 
 //animate the arrow
