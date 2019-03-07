@@ -180,8 +180,10 @@ a:visited {
     left: calc(80vw - 40px); } }
 
 @media (max-width: 530px) {
+  .site-navigation {
+    display: none; }
   .header__text-box {
-    top: 30rem; }
+    top: 26rem; }
   .heading--primary {
     font-size: 8rem; }
   .text-animate-wrapper {
