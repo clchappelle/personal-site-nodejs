@@ -1,3 +1,32 @@
+.site-navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  padding: 3rem;
+
+  a:link,
+  a:visited {
+    color: white;
+    margin: 0 1rem;
+    transition: all .2s;
+  }
+
+  a:hover,
+  a:active {
+    box-shadow:
+      inset 0 -0.4em rgba(0,0,0,.5);
+  }
+
+}
+
+.site-navigation__name {
+  margin-right: 1rem;
+  opacity: .2;
+}
+
 /* Header */
 .header {
   height: 95vh;
@@ -32,7 +61,7 @@
 
 .header__personal-photo-box {
   position: absolute;
-  top: 3rem;
+  top: 0rem;
   left: 0rem;
 }
 

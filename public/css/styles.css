@@ -12,7 +12,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   background-color: #F7F3F0;
@@ -46,7 +47,29 @@ a:visited {
 .link-underline {
   display: inline-block;
   position: relative;
+  transition: all .2s;
   box-shadow: inset 0 -0.1em white, inset 0 -0.4em #FDDC4C; }
+
+.site-navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  padding: 3rem; }
+  .site-navigation a:link,
+  .site-navigation a:visited {
+    color: white;
+    margin: 0 1rem;
+    transition: all .2s; }
+  .site-navigation a:hover,
+  .site-navigation a:active {
+    box-shadow: inset 0 -0.4em rgba(0, 0, 0, 0.5); }
+
+.site-navigation__name {
+  margin-right: 1rem;
+  opacity: .2; }
 
 /* Header */
 .header {
@@ -76,7 +99,7 @@ a:visited {
 /* Header photo */
 .header__personal-photo-box {
   position: absolute;
-  top: 3rem;
+  top: 0rem;
   left: 0rem; }
 
 .header__personal-photo {

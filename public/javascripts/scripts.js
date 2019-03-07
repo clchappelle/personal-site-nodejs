@@ -72,9 +72,9 @@ anime({
   targets: '.triangle',
   keyframes: [
     {opacity: 0},
-    {opacity: 1, delay: 2400, easing: 'easeOutQuad'}
+    {opacity: 1, delay: 2000, easing: 'easeOutQuad'}
   ],
-  duration: 1400
+  duration: 2400
 });
 
 anime({
@@ -84,4 +84,13 @@ anime({
   endDelay: 2000,
   direction: 'alternate',
   loop: true
+});
+
+anime({
+  targets: '.site-navigation',
+  keyframes: [
+  {translateY: '-6rem', duration: 0, opacity: 0},
+  {translateY: '0rem', opacity: 1, duration: 1400, delay: 2900}
+  ],
+  easing: 'easeOutQuad'
 });
