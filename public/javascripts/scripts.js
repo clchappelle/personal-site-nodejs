@@ -1,5 +1,8 @@
 // jshint esversion:6
 
+//AOS - Animate on scroll
+AOS.init({duration: 1200});
+
 
 //Animate in the text
 
