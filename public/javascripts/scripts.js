@@ -5,13 +5,30 @@ AOS.init({duration: 1200});
 
 
 //Dark/Light mode
-document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+setTheme();
 
-function toggleDarkLight() {
-  var theme = document.documentElement.getAttribute("data-theme");
-  theme === 'light' ? localStorage.setItem('theme', 'dark') : localStorage.setItem('theme', 'light');
-  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
-  // theme === 'light' ? document.documentElement.setAttribute('data-theme', 'dark') : document.documentElement.setAttribute('data-theme', 'light');
+function toggleTheme() {
+  var currentTheme = document.documentElement.getAttribute("data-theme");
+  // theme === 'light' ? localStorage.setItem('theme', 'dark') : localStorage.setItem('theme', 'light');
+  if (currentTheme === 'light') {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+  setTheme();
+}
+
+function setTheme() {
+  var theme = localStorage.getItem("theme");
+
+  document.documentElement.setAttribute('data-theme', theme);
+
+  if (theme === 'light') {
+    document.querySelector('.btn-theme-switch').innerHTML = '🌙';
+  } else {
+    document.querySelector('.btn-theme-switch').innerHTML = '🌞';
+  }
+
 }
 
 
