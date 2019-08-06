@@ -79,6 +79,22 @@ p {
   color: #fff;
   background-color: black; }
 
+.btn-theme-switch {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  outline: none;
+  transition: all .3s; }
+  .btn-theme-switch:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+
 .case-study-preview {
   padding: 10rem 0 10rem 0; }
   .case-study-preview--1 {
