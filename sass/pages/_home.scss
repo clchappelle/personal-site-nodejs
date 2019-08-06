@@ -212,7 +212,7 @@
   width: 100%;
   background: white;
   top: 95vh;
-  padding: 10rem 3rem;
+  padding-top: 10rem;
 }
 
 .about {
@@ -237,6 +237,16 @@
 
 .about__contact {
   float: left;
+}
+
+.about__contact-link {
+  &:link,
+  &:visited {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000;
+  }
+
 }
 
 .about__contact__item {
@@ -264,4 +274,8 @@
 
 .post__title {
   margin-bottom: 1rem;
+}
+
+.case-studies {
+  margin-top: 6rem;
 }
