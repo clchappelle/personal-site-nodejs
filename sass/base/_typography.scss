@@ -2,11 +2,6 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
-
-h1, h2, h3, h4, h5 {
-  color: #000;
-}
-
 h1 {
   font-size: 8rem;
   line-height: 1.25;
@@ -29,18 +24,18 @@ p {
   &:link,
   &:visited {
   display: inline-block;
-  color: black;
+  color: var(--color-primary-text);
   text-decoration: none;
   position: relative;
   transition: all .2s;
   box-shadow:
-    inset 0 -0.1em white,
-    inset 0 -0.4em #FDDC4C;
+    inset 0 -0.1em var(--color-white),
+    inset 0 -0.4em var(--color-link-underline);
   }
 
   &:hover {
     box-shadow:
-      inset 0 -0.1em white,
-      inset 0 -1.2em #FDDC4C;
+      inset 0 -0.1em var(--color-white),
+      inset 0 -1.2em var(--color-link-underline);
   }
 }

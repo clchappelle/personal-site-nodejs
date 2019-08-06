@@ -1,9 +1,31 @@
+//Colors
 $color-bg-green: #085744;
+$color-white: #fff;
+$color-black: #000;
+$color-yellow: #FDDC4C;
+$color-blue: #007eff;
 
 $color-cs1-1: #837A7D;
 $color-cs1-2: #BEB7B3;
 
+:root {
+  --color-primary-bg: #{$color-white};
+  --color-primary-text: #{$color-black};
+  --color-white: #{$color-white};
+  --color-link-underline: #{$color-yellow};
+}
+
+[data-theme="dark"] {
+  --color-primary-bg: #{$color-black};
+  --color-primary-text: #{$color-white};
+  --color-white: #{$color-black};
+  --color-link-underline: #{$color-blue};
+}
 
 $box-shadow-cs-img: 0 30px 60px 0 rgba(0,0,0,0.20);
 
+//Theme transition
+$theme-transition: all .3s;
+
+//Font sizes
 $font-size-default: 2rem;

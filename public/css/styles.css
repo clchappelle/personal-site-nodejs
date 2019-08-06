@@ -1,3 +1,15 @@
+:root {
+  --color-primary-bg: #fff;
+  --color-primary-text: #000;
+  --color-white: #fff;
+  --color-link-underline: #FDDC4C; }
+
+[data-theme="dark"] {
+  --color-primary-bg: #000;
+  --color-primary-text: #fff;
+  --color-white: #000;
+  --color-link-underline: #007eff; }
+
 @keyframes grid-blur {
   0% {
     filter: blur(20px); }
@@ -22,9 +34,6 @@ body {
 body {
   font-family: 'Work Sans', sans-serif; }
 
-h1, h2, h3, h4, h5 {
-  color: #000; }
-
 h1 {
   font-size: 8rem;
   line-height: 1.25; }
@@ -40,14 +49,14 @@ p {
 
 .link-underline:link, .link-underline:visited {
   display: inline-block;
-  color: black;
+  color: var(--color-primary-text);
   text-decoration: none;
   position: relative;
   transition: all .2s;
-  box-shadow: inset 0 -0.1em white, inset 0 -0.4em #FDDC4C; }
+  box-shadow: inset 0 -0.1em var(--color-white), inset 0 -0.4em var(--color-link-underline); }
 
 .link-underline:hover {
-  box-shadow: inset 0 -0.1em white, inset 0 -1.2em #FDDC4C; }
+  box-shadow: inset 0 -0.1em var(--color-white), inset 0 -1.2em var(--color-link-underline); }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -99,7 +108,7 @@ p {
     margin-top: 6rem; }
 
 .site-navigation {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   font-size: 2rem;
@@ -198,7 +207,7 @@ p {
   height: 0;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
-  border-top: 60px solid #fff;
+  border-top: 60px solid var(--color-white);
   position: absolute;
   left: calc(10vw - 40px);
   bottom: 10rem; }
@@ -257,8 +266,9 @@ p {
 .content {
   position: absolute;
   width: 100%;
-  background: white;
-  top: 95vh; }
+  background: var(--color-primary-bg);
+  top: 95vh;
+  transition: all 0.3s; }
 
 .about {
   display: table;
@@ -266,7 +276,9 @@ p {
   content: '';
   max-width: 100rem;
   margin: 0 auto;
-  padding-top: 10rem; }
+  padding-top: 10rem;
+  color: var(--color-primary-text);
+  transition: all 0.3s; }
 
 .about__bio {
   width: 65%;

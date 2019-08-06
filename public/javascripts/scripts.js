@@ -4,6 +4,15 @@
 AOS.init({duration: 1200});
 
 
+//Dark/Light mode
+document.documentElement.setAttribute('data-theme', 'light');
+
+function toggleDarkLight() {
+  var theme = document.documentElement.getAttribute("data-theme");
+  theme === 'light' ? document.documentElement.setAttribute('data-theme', 'dark') : document.documentElement.setAttribute('data-theme', 'light');
+}
+
+
 //Animate in the text
 
 // Wrap every letter in a span
