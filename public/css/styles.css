@@ -87,12 +87,12 @@ p {
     color: #fff;
     font-weight: 400;
     margin-top: 3rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 3.3rem; }
   .case-study-preview__role {
     font-size: 2rem;
     color: black;
     font-weight: 600;
-    margin-bottom: 3rem; }
+    margin-bottom: 6rem; }
   .case-study-preview__img {
     width: 100%;
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
