@@ -24,16 +24,23 @@ p {
 }
 
 
-a:hover,
-a:active {
-
-}
 
 .link-underline {
+  &:link,
+  &:visited {
   display: inline-block;
+  color: black;
+  text-decoration: none;
   position: relative;
   transition: all .2s;
   box-shadow:
     inset 0 -0.1em white,
     inset 0 -0.4em #FDDC4C;
+  }
+
+  &:hover {
+    box-shadow:
+      inset 0 -0.1em white,
+      inset 0 -1.2em #FDDC4C;
+  }
 }

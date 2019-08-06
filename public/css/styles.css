@@ -38,11 +38,16 @@ p {
   line-height: 1.5;
   margin-bottom: 2rem; }
 
-.link-underline {
+.link-underline:link, .link-underline:visited {
   display: inline-block;
+  color: black;
+  text-decoration: none;
   position: relative;
   transition: all .2s;
   box-shadow: inset 0 -0.1em white, inset 0 -0.4em #FDDC4C; }
+
+.link-underline:hover {
+  box-shadow: inset 0 -0.1em white, inset 0 -1.2em #FDDC4C; }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -66,7 +71,7 @@ p {
   background-color: black; }
 
 .case-study-preview {
-  padding: 6rem 0 10rem 0; }
+  padding: 10rem 0 10rem 0; }
   .case-study-preview--1 {
     background-image: linear-gradient(to right bottom, #837A7D, #BEB7B3); }
   .case-study-preview__content {
@@ -91,7 +96,7 @@ p {
   .case-study-preview__img {
     width: 100%;
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
-    margin-top: 40px; }
+    margin-top: 6rem; }
 
 .site-navigation {
   position: absolute;
@@ -105,7 +110,8 @@ p {
   .site-navigation a:visited {
     color: white;
     margin: 0 1rem;
-    transition: all .2s; }
+    transition: all .2s;
+    text-decoration: none; }
   .site-navigation a:hover,
   .site-navigation a:active {
     box-shadow: inset 0 -0.4em rgba(0, 0, 0, 0.5); }
@@ -252,15 +258,15 @@ p {
   position: absolute;
   width: 100%;
   background: white;
-  top: 95vh;
-  padding-top: 10rem; }
+  top: 95vh; }
 
 .about {
   display: table;
   clear: both;
   content: '';
   max-width: 100rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 10rem; }
 
 .about__bio {
   width: 65%;
@@ -273,12 +279,8 @@ p {
   margin-bottom: 2rem; }
 
 .about__contact {
-  float: left; }
-
-.about__contact-link:link, .about__contact-link:visited {
-  font-size: 2rem;
-  text-decoration: none;
-  color: #000; }
+  float: left;
+  font-size: 2rem; }
 
 .about__contact__item {
   margin-bottom: 2rem; }

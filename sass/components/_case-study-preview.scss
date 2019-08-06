@@ -1,5 +1,5 @@
 .case-study-preview {
-  padding: 6rem 0 10rem 0;
+  padding: 10rem 0 10rem 0;
 
   &--1 {
     background-image: linear-gradient(to right bottom, $color-cs1-1, $color-cs1-2);
@@ -35,6 +35,6 @@
   &__img {
     width: 100%;
     box-shadow: $box-shadow-cs-img;
-    margin-top: 40px;
+    margin-top: 6rem;
   }
 }
