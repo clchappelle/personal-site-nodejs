@@ -20,6 +20,10 @@ app.get("/", function(req, res) {
   res.render("home");
 });
 
+app.get("/foundation-funds", function(req, res) {
+  res.render("case_studies/foundation_funds");
+});
+
 const server = app.listen(port, function() {
   console.log("Server started on port " + port);
 });
