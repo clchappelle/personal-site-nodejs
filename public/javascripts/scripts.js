@@ -5,11 +5,13 @@ AOS.init({duration: 1200});
 
 
 //Dark/Light mode
-document.documentElement.setAttribute('data-theme', 'light');
+document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
 
 function toggleDarkLight() {
   var theme = document.documentElement.getAttribute("data-theme");
-  theme === 'light' ? document.documentElement.setAttribute('data-theme', 'dark') : document.documentElement.setAttribute('data-theme', 'light');
+  theme === 'light' ? localStorage.setItem('theme', 'dark') : localStorage.setItem('theme', 'light');
+  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+  // theme === 'light' ? document.documentElement.setAttribute('data-theme', 'dark') : document.documentElement.setAttribute('data-theme', 'light');
 }
 
 

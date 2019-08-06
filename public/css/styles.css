@@ -315,3 +315,6 @@ p {
 
 .case-studies {
   margin-top: 6rem; }
+
+.case-study__title {
+  color: var(--color-white); }
