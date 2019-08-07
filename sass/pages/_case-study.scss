@@ -1,5 +1,37 @@
 .case-study {
-  &__title {
-    color: var(--color-white);
+
+  &__header {
+    &--1 {
+      background-image: linear-gradient(to right bottom, $color-cs1-1, $color-cs1-2);
+    }
   }
+
+  &__header-content {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 10rem 0 10rem 0;
+  }
+
+  &__company {
+    font-size: 4rem;
+    color: black;
+    font-weight: 600;
+  }
+
+  &__title {
+    font-size: 4rem;
+    line-height: 1.4;
+    color: $color-white;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-bottom: 3.3rem;
+  }
+
+  &__role {
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 6rem;
+  }
+
 }

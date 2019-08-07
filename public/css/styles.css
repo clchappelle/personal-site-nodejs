@@ -339,5 +339,29 @@ p {
 .case-studies {
   margin-top: 6rem; }
 
+.case-study__header--1 {
+  background-image: linear-gradient(to right bottom, #837A7D, #BEB7B3); }
+
+.case-study__header-content {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 10rem 0 10rem 0; }
+
+.case-study__company {
+  font-size: 4rem;
+  color: black;
+  font-weight: 600; }
+
 .case-study__title {
-  color: var(--color-white); }
+  font-size: 4rem;
+  line-height: 1.4;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 3.3rem; }
+
+.case-study__role {
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 6rem; }
