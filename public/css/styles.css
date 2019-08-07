@@ -130,6 +130,7 @@ p {
   font-size: 2rem;
   color: white;
   display: flex;
+  align-items: flex-start;
   padding: 3rem; }
   .site-navigation a:link,
   .site-navigation a:visited {
