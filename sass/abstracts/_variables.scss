@@ -3,7 +3,9 @@ $color-bg-green: #085744;
 $color-white: #fff;
 $color-black: #000;
 $color-yellow: #FDDC4C;
-$color-blue: #007eff;
+$color-night-blue: #0c4a87;
+
+$color-night-gray: #a8a48e;
 
 $color-cs1-1: #837A7D;
 $color-cs1-2: #BEB7B3;
@@ -13,13 +15,15 @@ $color-cs1-2: #BEB7B3;
   --color-primary-text: #{$color-black};
   --color-white: #{$color-white};
   --color-link-underline: #{$color-yellow};
+  --color-grid-square: rgba(0,0,0,.05);
 }
 
 [data-theme="dark"] {
   --color-primary-bg: #{$color-black};
-  --color-primary-text: #{$color-white};
+  --color-primary-text: #{$color-night-gray};
   --color-white: #{$color-black};
-  --color-link-underline: #{$color-blue};
+  --color-link-underline: #{$color-night-blue};
+  --color-grid-square: rgba(0,0,0,.3);
 }
 
 $box-shadow-cs-img: 0 30px 60px 0 rgba(0,0,0,0.20);

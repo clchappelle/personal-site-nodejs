@@ -24,9 +24,11 @@ function setTheme() {
   document.documentElement.setAttribute('data-theme', theme);
 
   if (theme === 'light') {
-    document.querySelector('.btn-theme-switch').innerHTML = '🌙';
+    document.querySelector('.btn-theme-switch').innerHTML = '🌚';
+    document.querySelector('.header__personal-photo').src="images/me-yellow.png";
   } else {
-    document.querySelector('.btn-theme-switch').innerHTML = '🌞';
+    document.querySelector('.btn-theme-switch').innerHTML = '🌝';
+    document.querySelector('.header__personal-photo').src="images/me-yellow-dark.png";
   }
 
 }
@@ -112,7 +114,7 @@ anime({
   targets: '.triangle',
   translateY: -25,
   duration: 1400,
-  endDelay: 2000,
+  endDelay: 700,
   direction: 'alternate',
   loop: true
 });

@@ -2,13 +2,15 @@
   --color-primary-bg: #fff;
   --color-primary-text: #000;
   --color-white: #fff;
-  --color-link-underline: #FDDC4C; }
+  --color-link-underline: #FDDC4C;
+  --color-grid-square: rgba(0,0,0,.05); }
 
 [data-theme="dark"] {
   --color-primary-bg: #000;
-  --color-primary-text: #fff;
+  --color-primary-text: #a8a48e;
   --color-white: #000;
-  --color-link-underline: #007eff; }
+  --color-link-underline: #0c4a87;
+  --color-grid-square: rgba(0,0,0,.3); }
 
 @keyframes grid-blur {
   0% {
@@ -81,7 +83,7 @@ p {
 
 .btn-theme-switch {
   border: none;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,6 +91,7 @@ p {
   width: 4rem;
   height: 4rem;
   border-radius: 10rem;
+  padding-left: 2px;
   cursor: pointer;
   outline: none;
   transition: all .3s; }
@@ -169,7 +172,7 @@ p {
 .header__background-grid-square {
   width: 4rem;
   height: 4rem;
-  background-color: rgba(0, 0, 0, 0.05); }
+  background-color: var(--color-grid-square); }
 
 /* Header photo */
 .header__personal-photo-box {
