@@ -57,6 +57,7 @@
   width: 4rem;
   height: 4rem;
   background-color: var(--color-grid-square);
+  transition: $theme-transition;
 }
 
 /* Header photo */
@@ -72,12 +73,13 @@
 }
 
 .background-slide {
-  background-color: $color-bg-green; /* #FDDC4C; */
+  background-color: var(--color-header-bg);
   width: 100vw;
   height: 95vh;
   position: absolute;
   right: 0;
   top:0;
+  transition: $theme-transition;
 }
 
 /* Header titles */

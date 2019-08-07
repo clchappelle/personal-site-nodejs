@@ -24,10 +24,10 @@ function setTheme() {
   document.documentElement.setAttribute('data-theme', theme);
 
   if (theme === 'light') {
-    document.querySelector('.btn-theme-switch').innerHTML = '🌚';
+    document.querySelector('.btn-theme-switch').innerHTML = '🌝';
     document.querySelector('.header__personal-photo').src="images/me-yellow.png";
   } else {
-    document.querySelector('.btn-theme-switch').innerHTML = '🌝';
+    document.querySelector('.btn-theme-switch').innerHTML = '🌚';
     document.querySelector('.header__personal-photo').src="images/me-yellow-dark.png";
   }
 

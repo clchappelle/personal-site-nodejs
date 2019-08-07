@@ -1,5 +1,6 @@
 //Colors
-$color-bg-green: #085744;
+$color-header-bg-day: #085744;
+$color-header-bg-night: #084c57;
 $color-white: #fff;
 $color-black: #000;
 $color-yellow: #FDDC4C;
@@ -16,6 +17,7 @@ $color-cs1-2: #BEB7B3;
   --color-white: #{$color-white};
   --color-link-underline: #{$color-yellow};
   --color-grid-square: rgba(0,0,0,.05);
+  --color-header-bg: #{$color-header-bg-day};
 }
 
 [data-theme="dark"] {
@@ -24,12 +26,13 @@ $color-cs1-2: #BEB7B3;
   --color-white: #{$color-black};
   --color-link-underline: #{$color-night-blue};
   --color-grid-square: rgba(0,0,0,.3);
+  --color-header-bg: #{$color-header-bg-night};
 }
 
 $box-shadow-cs-img: 0 30px 60px 0 rgba(0,0,0,0.20);
 
 //Theme transition
-$theme-transition: all .3s;
+$theme-transition: color 1s, background-color 1s;
 
 //Font sizes
 $font-size-default: 2rem;
