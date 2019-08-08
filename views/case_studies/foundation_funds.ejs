@@ -4,10 +4,87 @@
 
 <div class="case-study__header--1">
     <div class="case-study__header-content">
-      <h4 class="case-study__company">Bright Funds</h4>
-      <h3 class="case-study__title">How we redesigned a key product feature to make giving more effective</h3>
+      <h2 class="case-study__company">Bright Funds</h4>
+      <h1 class="case-study__title">How we redesigned a key product feature to make giving more effective</h3>
       <div class="case-study__role">Lead Designer / Team of 3</div>
+      <img src="../images/home/case-study_foundation-funds.jpg" class="case-study-preview__img">
     </div>
+</div>
+
+<div class="case-study__body">
+  <div class="case-study__content-wrapper--md">
+    <h3 class="section-title">Getting back to the roots</h3>
+    <p>Bright Funds was founded to make giving easier, effective, and rewarding. It did this by offering Funds - think mutual funds for giving - that supported a thematic group of organizations and followed up with stories from the organizations. Over time, the product grew and transitioned from B2C to B2B2C. To handle the growth, many features were added but the original concept of Funds hadn’t been touched in far too long. I was part of a project to redesign this core part of the experience.</p>
+    <h3>Early insights</h3>
+    <p>The typical person using Bright Funds is an employee at a company using our product to run their giving and volunteering programs. Many use Bright Funds to take advantage of their company’s donation matching. They come to turn their $100 donation into $200.</p>
+    <p>At the time, people could donate to nonprofits or nonprofit mutual Funds. Each Fund supported a group of organizations working towards a cause. Roughly 30% of people had donated to a Fund. Many people donate to Funds because they’re supporting a cause they care about and the work of finding organizations was done for them. They made it easier to give by taking away the effort of deciding what organization to support.</p>
+    <p>From looking at usage data, customer support conversations, and customer outreach we gathered these insights</p>
+    <ol>
+      <li><strong>People want their giving to make a difference, but it’s not clear to them how to do this.</strong> 85% of donors say they care about nonprofit performance, but fewer than 10% give based on performance.</li>
+      <li><strong>It’s hard to discover the best places to give.</strong> There’s no place that guides decisions around how to give or where to give. The best information is held within Foundations, which  is typically available only to high net-worth individuals.</li>
+      <li><strong>People often don’t have a time when they think or reflect on how they’d like to give.</strong> Giving becomes a reaction rather than a planned action.</li>
+      <li><strong>There’s a shifting focus from nonprofits (I want to give to nonprofit x) to causes (I want to help people who don’t have a place to live).</strong></li>
+    </ol>
+    <p class="p--large">85% of donors say they care about nonprofit performance, but fewer than 10% give based on performance. This gap between someone’s intention and behavior showed an opportunity.</p>
+
+    <h3>Framing the concept</h3>
+    <p>Think about the last time you donated. Maybe a friend asked you to support their bike-a-thon. Or maybe it was the holidays so you donated to an organization you support periodically...</p>
+    <p>Now imagine how Bill Gates gives. He has access to an entire foundation finding ways to change lives. OK, Bill Gates might be an unfair example. But the point is that someone giving a large amount of money can lean on experts to guide how to make the most impact.</p>
+    <p>When we give, we’re mostly thrown into the deep end. We follow our habits. In many cases that means giving when asked, not giving at all, or supporting the same organization. There’s nowhere to go that helps us make smart decisions (or makes smart decisions for us).</p>
+    <p class="p--large">We wanted to flip the script. Whether you’re donating $10 or $1,000 - our high level goal was to give you the same power as someone giving millions.</p>
+
+    <p>If 85% of people say they care about performance and Funds are an effective means in encouraging people to shift their giving habits, we felt that offering a version backed by Foundation expertise could be hugely impactful. </p>
+
+    <p>We arrived at the concept of Foundation Funds. The idea was that each Foundation Fund would be backed by a Foundation or expert who would find the best way to support that cause. Your 10 dollars would be pooled up with everyone else’s 10 dollars and channelled to proven, impactful projects.</p>
+
+    <p>This project would:</p>
+
+    <ul>
+      <li>Be a strategic differentiator from competitors.</li>
+      <li>Build a deeper relationship with people who would come to Bright Funds seeking the extra resources offered.</li>
+      <li>Solve some of the inner conflict when it comes to giving (desire to give effectively, lack of a product to help them do that).</li>
+    </ul>
+
+    <p>An added benefit was that we could piggy-back on the backend already built to support the existing Funds, saving our team a good chunk of work. This would keep our scope down and allow us to get a product out for testing faster.</p>
+
+    <h3>Mapping out the project</h3>
+    <p>We had an idea and were ready to get more concrete. </p>
+
+    <p>At this stage, the goal was to gain an understanding of the scope of work and to explore ideas quickly without worrying about visual design. Even if the low-fi style of a wireframe is meant to prevent ideas from becoming precious, early layout and UI decisions can cement thinking as you go. At this point, there’s not yet a need to decide on UI.</p>
+
+    <p>I’ve taken to the process <a class="link-underline" href="https://www.feltpresence.com/breadboards.html" target="_blank">described by</a>  <a class="link-underline" href="https://basecamp.com/shapeup/1.3-chapter-04#breadboarding" target="_blank">Ryan Singer</a>. With breadboarding you explore how someone gets from one screen to the next and what content belongs in the various steps. The focus is on the flow of an idea, not how it looks.</p>
+
+    <img class="case-study__image" src="../images/cs-foundation-fund/breadboard-01.jpg">
+
+    <p>Here’s an example of how we used breadboarding to map the user flow of Foundation Funds. Each page is underlined. Beneath that are the pieces of content and UI elements that belong on the page. From there, links are drawn to show how you get from one place to the next. We could see the project breaking into a few different scopes:</p>
+    <ul>
+      <li>An index page where someone could see all of the Foundation Funds</li>
+      <li>A show page for each Foundation Fund</li>
+      <li>A way to get to the index page from the ‘Explore’ page to capture the group of users that are browsing for suggestions</li>
+    </ul>
+    <p>Sketching out the flow also reminded us that it’s common for people to search for a nonprofit when they have a specific organization in mind. We wanted to make sure that these people would be aware of the new Foundation Funds. We also didn’t want to get too much in their way. We decided we’d include a way to get to the index page of Foundation Funds from the search results page, but worry about exactly how that would look later on.</p>
+
+    <img class="case-study__image" src="../images/cs-foundation-fund/breadboard-02.jpg">
+
+    <p>In fact, the global navigation that is visible on almost all pages includes a search input. In this case, people would skip past the explore page all together. The flow could look something like:</p>
+    <img class="case-study__image" src="../images/cs-foundation-fund/breadboard-03.jpg">
+
+    <p>We also saw that there would be at least two steps before someone reaches a Foundation Fund and can make the decision to donate. Wouldn’t it be nice if someone could get to a Foundation Fund directly from the explore page? If there could be a way for someone to see a snapshot of the possible Foundation Funds directly on explore and is ready to jump right in, we wanted to allow that.</p>
+    <img class="case-study__image" src="../images/cs-foundation-fund/breadboard-04.jpg">
+
+    <p>The payment process would not need to be touched for this project. Rather, most of the work was focused on helping someone find and connect with a Foundation Fund that they would be interested in supporting.</p>
+
+    <p>These sketches illustrate the level of fidelity that helps the team work through scenarios and use cases. When we’re all comfortable that we’ve though the various use cases we can move on.</p>
+
+    <h3>Protecting the scope scope</h3>
+    <p>Like any project, we had many ideas of things we could do. Each new thing meant more work for the team, and as a consequence, more time. We needed to build a fence around our scope of work so that we had clarity around where we’re going and how long it would take. Looking at the breadboard, we felt comfortable we could get the core of the product completed over the course of two months. Enough time to build something we could react to and get into the hands of customers. </p>
+
+    <p>Our team size and the principle of learning through real usage made it easier to decide on scope. Additional ideas would come up and be discussed, but so as to not distract from the work at hand, we would hold off on expanding the feature set.</p>
+
+    <h3>Getting concrete with sketches</h3>
+    <p>With a clearer idea of the user flows and the scopes of work involved, I moved on to sketching the various UI elements. Again here, the purpose is to get concrete without bloating the process with unnecessary tools. For that reason, we use sketches rather than tools like Sketch, Illustrator, or Photoshop. In this example, I used paper or <a class="link-underline" href="http://www.miro.com" target="_blank">Miro (Realtime Board)</a> to sketch out the various elements we had pinpointed when breadboarding the experience.</p>
+
+  </div>
 </div>
 
 <%- include("../partials/footer.ejs"); %>
