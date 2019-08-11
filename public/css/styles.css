@@ -253,6 +253,9 @@ ol, ul {
   .site-navigation a:hover,
   .site-navigation a:active {
     box-shadow: inset 0 -0.4em rgba(0, 0, 0, 0.5); }
+  @media only screen and (max-width: 600px) {
+    .site-navigation--hide-mobile {
+      display: none; } }
 
 .site-navigation__name {
   margin-right: 1rem;
@@ -342,13 +345,13 @@ ol, ul {
   left: calc(10vw - 40px);
   bottom: 10rem; }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .heading--primary {
     font-size: 15rem; }
   .text-animate-wrapper {
     margin-top: -8rem; } }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .header__personal-photo {
     width: 20rem; }
   .header__text-box {
@@ -367,9 +370,7 @@ ol, ul {
   .triangle {
     left: calc(80vw - 40px); } }
 
-@media (max-width: 530px) {
-  .site-navigation {
-    display: none; }
+@media only screen and (max-width: 530px) {
   .header__text-box {
     top: 26rem; }
   .heading--primary {
@@ -380,7 +381,7 @@ ol, ul {
     left: 0;
     margin-top: 4rem; } }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   .header__personal-photo {
     width: 14rem; }
   .header__text-box {
@@ -388,7 +389,7 @@ ol, ul {
   .triangle {
     bottom: 3rem; } }
 
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   .header__text-box {
     padding: 0 30px; } }
 
@@ -430,7 +431,7 @@ ol, ul {
 .about__contact__item p {
   margin-bottom: 0; }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .about__bio {
     width: 100%; }
   .about__contact {
