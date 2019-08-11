@@ -7,6 +7,8 @@
   display: flex;
   align-items: flex-start;
   padding: 3rem;
+  z-index: 1000;
+  opacity: 0;
 
   a:link,
   a:visited {
@@ -225,7 +227,7 @@
   content: '';
   max-width: 100rem;
   margin: 0 auto;
-  padding-top: 10rem;
+  padding: 10rem 3rem;
   color: var(--color-primary-text);
   transition: $theme-transition;
 }
@@ -275,5 +277,4 @@
 }
 
 .case-studies {
-  margin-top: 6rem;
 }
