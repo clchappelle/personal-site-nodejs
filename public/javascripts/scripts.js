@@ -23,15 +23,15 @@ function setTheme() {
 
   document.documentElement.setAttribute('data-theme', theme);
 
-  if (theme === 'light') {
-    document.querySelector('.btn-theme-switch').innerHTML = '🌝';
-    if (window.location.pathname == '/') {
-      document.querySelector('.header__personal-photo').src="images/me-yellow.png";
-    }
-  } else {
+  if (theme === 'dark') {
     document.querySelector('.btn-theme-switch').innerHTML = '🌚';
     if (window.location.pathname == '/') {
       document.querySelector('.header__personal-photo').src="images/me-yellow-dark.png";
+    }
+  } else {
+    document.querySelector('.btn-theme-switch').innerHTML = '🌝';
+    if (window.location.pathname == '/') {
+      document.querySelector('.header__personal-photo').src="images/me-yellow.png";
     }
   }
 
