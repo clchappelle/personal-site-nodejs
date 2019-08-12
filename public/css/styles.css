@@ -169,7 +169,8 @@ ol, ul {
     display: flex;
     justify-content: center; }
   .footer__contact-link:link, .footer__contact-link:visited {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-size: 2rem;
     color: #000;
     text-decoration: none;
