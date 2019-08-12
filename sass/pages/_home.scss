@@ -217,7 +217,7 @@
 /* Main content */
 
 .content {
-  position: absolute;
+  position: relative;
   width: 100%;
   background: var(--color-primary-bg);
   top: 95vh;
@@ -280,4 +280,8 @@
 }
 
 .case-studies {
+}
+
+.home-footer {
+  transform: translateY(95vh);
 }
