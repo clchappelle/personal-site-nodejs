@@ -167,7 +167,8 @@ ol, ul {
     transition: color 1s, background-color 1s; }
   .footer__links {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
   .footer__contact-link:link, .footer__contact-link:visited {
     display: flex;
     align-items: center;
@@ -180,8 +181,12 @@ ol, ul {
     transition: all .3s; }
   .footer__contact-link:hover {
     box-shadow: none; }
-  .footer__contact-link:not(first-child) {
+  .footer__contact-link:not(:first-child) {
     margin-left: 2rem; }
+  @media only screen and (max-width: 443px) {
+    .footer__contact-link:not(:first-child) {
+      margin-left: 0;
+      margin-top: 1rem; } }
   .footer__copyright {
     margin-top: 6rem; }
 
