@@ -10,6 +10,10 @@
     background-image: linear-gradient(to right bottom, $color-cs1-1, $color-cs1-2);
   }
 
+  &--engagement {
+    background-image: linear-gradient(to right bottom, $color-cs2-1, $color-cs2-2);
+  }
+
   &__img {
     display: block;
     width: 90%;

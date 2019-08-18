@@ -131,7 +131,7 @@ ol, ul {
   .case-study-preview--1 {
     background-image: linear-gradient(to right bottom, #837A7D, #BEB7B3); }
   .case-study-preview--2 {
-    background-image: linear-gradient(to right bottom, #7A97C3, #5E6581); }
+    background-image: linear-gradient(to right bottom, #56647B, #9CB3D4); }
   .case-study-preview__content {
     max-width: 100rem;
     margin: 0 auto;
@@ -201,6 +201,9 @@ ol, ul {
 
 .image-full--foundation-funds {
   background-image: linear-gradient(to right bottom, #837A7D, #BEB7B3); }
+
+.image-full--engagement {
+  background-image: linear-gradient(to right bottom, #56647B, #9CB3D4); }
 
 .image-full__img {
   display: block;
@@ -490,7 +493,7 @@ ol, ul {
   background-image: linear-gradient(to right bottom, #837A7D, #BEB7B3); }
 
 .case-study__header--2 {
-  background-image: linear-gradient(to right bottom, #7A97C3, #5E6581); }
+  background-image: linear-gradient(to right bottom, #56647B, #9CB3D4); }
 
 .case-study__header-content {
   max-width: 100rem;
@@ -537,3 +540,10 @@ ol, ul {
 
 .case-study__footer-title {
   margin-bottom: 6rem; }
+
+.definition-badge {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2px; }
