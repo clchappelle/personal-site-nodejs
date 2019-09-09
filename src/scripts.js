@@ -26,12 +26,12 @@ function setTheme() {
   if (theme === 'dark') {
     document.querySelector('.btn-theme-switch').innerHTML = '🌚';
     if (window.location.pathname == '/') {
-      document.querySelector('.header__personal-photo').src="images/me-yellow-dark.png";
+      document.querySelector('.header__personal-photo').src="images/me-header-dark.png";
     }
   } else {
     document.querySelector('.btn-theme-switch').innerHTML = '🌝';
     if (window.location.pathname == '/') {
-      document.querySelector('.header__personal-photo').src="images/me-yellow.png";
+      document.querySelector('.header__personal-photo').src="images/me-header.png";
     }
   }
 

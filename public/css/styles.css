@@ -4,11 +4,11 @@
   --color-white: #fff;
   --color-link-underline: #FDDC4C;
   --color-grid-square: rgba(0,0,0,.05);
-  --color-header-bg: #085744; }
+  --color-header-bg: #D9A507; }
 
 [data-theme="dark"] {
   --color-primary-bg: #000;
-  --color-primary-text: #a8a48e;
+  --color-primary-text: #eae5c5;
   --color-white: #000;
   --color-link-underline: #0c4a87;
   --color-grid-square: rgba(0,0,0,.3);
@@ -111,7 +111,8 @@ ol, ul {
 
 .btn-theme-switch {
   border: none;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,9 +123,12 @@ ol, ul {
   padding-left: 2px;
   cursor: pointer;
   outline: none;
+  transition: all .3s;
+  border: 0px solid var(--color-header-bg);
   transition: all .3s; }
   .btn-theme-switch:hover {
-    background-color: rgba(255, 255, 255, 0.1); }
+    box-shadow: none;
+    border: 3px solid var(--color-header-bg); }
 
 .case-study-preview {
   padding: 10rem 0 10rem 0; }
@@ -284,18 +288,19 @@ ol, ul {
   align-items: center;
   padding: 1rem;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 0; }
+  background-color: var(--color-white);
+  opacity: 0;
+  transition: color 1s, background-color 1s; }
   .site-navigation a:link,
   .site-navigation a:visited {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--color-primary-text);
     margin: 0 1rem;
     transition: all .2s;
     text-decoration: none; }
   .site-navigation a:hover,
   .site-navigation a:active {
-    color: white;
-    box-shadow: inset 0 -0.4em rgba(0, 0, 0, 0.5); }
+    color: var(--color-primary-text);
+    box-shadow: inset 0 -0.4em var(--color-link-underline); }
   @media only screen and (max-width: 600px) {
     .site-navigation--hide-mobile {
       display: none; } }
@@ -336,7 +341,9 @@ ol, ul {
   left: 0rem; }
 
 .header__personal-photo {
-  width: 25rem; }
+  width: 25rem;
+  border-right: 10px solid #EEE4D8;
+  border-bottom: 10px solid #EEE4D8; }
 
 .background-slide {
   background-color: var(--color-header-bg);
@@ -521,7 +528,8 @@ ol, ul {
 
 .case-study__body {
   padding: 6rem 0 10rem 0;
-  background-color: var(--color-primary-bg); }
+  background-color: var(--color-primary-bg);
+  transition: color 1s, background-color 1s; }
 
 .case-study__content-wrapper--md {
   max-width: 86rem;
