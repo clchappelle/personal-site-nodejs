@@ -53,10 +53,7 @@ anime({
 
 //////// Home page on load ////////
 //When document is loaded, remove preload class. Preload class has display set to hidden. Prevents elements from displaying before JS can animate
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementsByTagName('BODY')[0].classList.remove('preload');
-  homeAnimation();
-});
+homeAnimation();
 
 //////// Home animation
 function homeAnimation() {

@@ -1,47 +1,54 @@
 .case-study-preview {
-  padding: 10rem 0 10rem 0;
+  padding: 1rem;
 
-  &--1 {
-    background-image: linear-gradient(to right bottom, $color-cs1-1, $color-cs1-2);
+  &__gradient {
+    &--1 {
+      background-image: linear-gradient(to right bottom, $color-cs1-1, $color-cs1-2);
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, $color-cs2-1, $color-cs2-2);
+    }
   }
 
-  &--2 {
-    background-image: linear-gradient(to right bottom, $color-cs2-1, $color-cs2-2);
+  &__image {
+    grid-column: span 6;
+    padding: 5rem;
+    align-self: center;
   }
 
   &__content {
-    max-width: 100rem;
-    margin: 0 auto;
-    padding-left: 3rem;
+    grid-column: span 6;
+    padding-left: 5rem;
     padding-right: 3rem;
+    align-self: center;
   }
 
-  &__company {
-    font-size: 4rem;
-    color: black;
-    font-weight: 600;
+  &__count {
+    font-size: 1.8rem;
+    color: var(--color-primary-text);
+    letter-spacing: 1px;
+    font-weight: 300;
   }
 
   &__title {
     font-size: 4rem;
     line-height: 1.4;
-    color: #fff;
-    font-weight: 400;
-    margin-top: 3rem;
+    color: var(--color-primary-text);
+    font-weight: 600;
+    margin-top: 1rem;
     margin-bottom: 3.3rem;
   }
 
   &__role {
     font-size: 2rem;
     color: black;
-    font-weight: 600;
     margin-bottom: 6rem;
   }
 
   &__img {
     width: 100%;
     box-shadow: $box-shadow-cs-img;
-    margin-top: 6rem;
 
     &--no-shadow {
       box-shadow: none;
