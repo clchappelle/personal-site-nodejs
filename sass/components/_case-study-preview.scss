@@ -35,7 +35,7 @@
 
   &__count {
     font-size: 1.8rem;
-    color: var(--color-primary-text);
+    color: rgba(0,0,0,.8);
     letter-spacing: 1px;
     font-weight: 300;
     margin-top: 0;
@@ -44,7 +44,7 @@
   &__title {
     font-size: 4rem;
     line-height: 1.4;
-    color: var(--color-primary-text);
+    color: rgba(0,0,0,.9);
     font-weight: 600;
     margin-top: 1rem;
     margin-bottom: 3.3rem;
@@ -52,7 +52,7 @@
 
   &__role {
     font-size: 2rem;
-    color: black;
+    color: rgba(0,0,0,.8);
     margin-bottom: 6rem;
   }
 

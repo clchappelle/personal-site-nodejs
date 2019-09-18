@@ -157,20 +157,20 @@ ol, ul {
         padding: 0 3rem; } }
   .case-study-preview__count {
     font-size: 1.8rem;
-    color: var(--color-primary-text);
+    color: rgba(0, 0, 0, 0.8);
     letter-spacing: 1px;
     font-weight: 300;
     margin-top: 0; }
   .case-study-preview__title {
     font-size: 4rem;
     line-height: 1.4;
-    color: var(--color-primary-text);
+    color: rgba(0, 0, 0, 0.9);
     font-weight: 600;
     margin-top: 1rem;
     margin-bottom: 3.3rem; }
   .case-study-preview__role {
     font-size: 2rem;
-    color: black;
+    color: rgba(0, 0, 0, 0.8);
     margin-bottom: 6rem; }
   .case-study-preview__img {
     width: 100%;
@@ -472,18 +472,19 @@ ol, ul {
   transition: color 1s, background-color 1s; }
 
 .about {
-  display: table;
-  clear: both;
-  content: '';
-  max-width: 100rem;
-  margin: 0 auto;
   padding: 10rem 3rem;
   color: var(--color-primary-text);
   transition: color 1s, background-color 1s; }
 
 .about__bio {
-  width: 65%;
-  float: right; }
+  grid-column: 5 / span 6;
+  grid-row: 1; }
+  @media only screen and (max-width: 1200px) {
+    .about__bio {
+      grid-column: 5 / span 7; } }
+  @media only screen and (max-width: 1000px) {
+    .about__bio {
+      grid-column: 2 / span 10; } }
 
 .bio__header {
   font-size: 3.2rem;
@@ -492,8 +493,13 @@ ol, ul {
   margin-bottom: 2rem; }
 
 .about__contact {
-  float: left;
+  grid-column: 2 / span 3;
+  grid-row: 1;
   font-size: 2rem; }
+  @media only screen and (max-width: 1000px) {
+    .about__contact {
+      grid-column: 2 / span 10;
+      grid-row: 2; } }
 
 .about__contact__item {
   margin-bottom: 2rem; }
@@ -501,21 +507,12 @@ ol, ul {
 .about__contact__item p {
   margin-bottom: 0; }
 
-@media only screen and (max-width: 860px) {
-  .about__bio {
-    width: 100%; }
-  .about__contact {
-    width: 100%; } }
-
 .post {
   max-width: 80rem;
   margin: 0 auto; }
 
 .post__title {
   margin-bottom: 1rem; }
-
-.case-studies {
-  padding-bottom: 10rem; }
 
 .home-footer {
   transform: translateY(95vh); }

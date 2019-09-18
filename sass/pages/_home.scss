@@ -229,19 +229,21 @@
 }
 
 .about {
-  display: table;
-  clear: both;
-  content: '';
-  max-width: 100rem;
-  margin: 0 auto;
   padding: 10rem 3rem;
   color: var(--color-primary-text);
   transition: $theme-transition;
 }
 
 .about__bio {
-  width: 65%;
-  float: right;
+  grid-column: 5 / span 6;
+  grid-row: 1;
+
+  @media only screen and (max-width : 1200px) {
+    grid-column: 5 / span 7;
+  }
+  @media only screen and (max-width : 1000px) {
+    grid-column: 2 / span 10;
+  }
 }
 
 .bio__header {
@@ -252,8 +254,14 @@
 }
 
 .about__contact {
-  float: left;
+  grid-column: 2 / span 3;
+  grid-row: 1;
   font-size: $font-size-default;
+
+  @media only screen and (max-width : 1000px) {
+    grid-column: 2 / span 10;
+    grid-row: 2;
+  }
 }
 
 .about__contact__item {
@@ -263,16 +271,6 @@
 .about__contact__item p {
   margin-bottom: 0;
 }
-
-@media only screen and (max-width : 860px) {
-  .about__bio {
-    width: 100%;
-  }
-  .about__contact {
-    width: 100%
-  }
-}
-
 
 .post {
   max-width: 80rem;
@@ -284,7 +282,6 @@
 }
 
 .case-studies {
-  padding-bottom: 10rem;
 }
 
 .home-footer {
