@@ -11,8 +11,6 @@
   }
 
   &__header-content {
-    max-width: 100rem;
-    margin: 0 auto;
     padding: 10rem 3rem 10rem 3rem;
   }
 
@@ -45,10 +43,10 @@
   }
 
   &__content-wrapper--md {
-    max-width: 86rem;
-    margin: 0 auto;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    @media only screen and (max-width : 530px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
   }
 
   &__image {
