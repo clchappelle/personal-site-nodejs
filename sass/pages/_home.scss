@@ -229,7 +229,7 @@
 }
 
 .about {
-  padding: 10rem 3rem;
+  padding: 10rem 3rem 0rem 3rem;
   color: var(--color-primary-text);
   transition: $theme-transition;
 }
@@ -273,7 +273,7 @@
 }
 
 .about__skills {
-  padding-bottom: 10rem;
+  padding: 10rem 0;
 
   @media only screen and (max-width : 600px) {
     padding-left: 3rem;
