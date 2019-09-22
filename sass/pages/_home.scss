@@ -272,6 +272,33 @@
   margin-bottom: 0;
 }
 
+.about__skills {
+  padding-bottom: 10rem;
+
+  @media only screen and (max-width : 600px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.about__skills p {
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+.about__skills-span {
+  white-space: nowrap;
+
+  @media only screen and (max-width : 600px) {
+    white-space: normal;
+  }
+}
+
+.about__skills-icon {
+  width: 40px;
+  transform: translateY(10px);
+}
+
 .post {
   max-width: 80rem;
   margin: 0 auto;
