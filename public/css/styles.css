@@ -4,7 +4,8 @@
   --color-white: #fff;
   --color-link-underline: #FDDC4C;
   --color-grid-square: rgba(0,0,0,.05);
-  --color-header-bg: #D9A507; }
+  --color-header-bg: #D9A507;
+  --color-cs-alternate-bg: #F5F4EF; }
 
 [data-theme="dark"] {
   --color-primary-bg: #000;
@@ -12,7 +13,8 @@
   --color-white: #000;
   --color-link-underline: #0c4a87;
   --color-grid-square: rgba(0,0,0,.3);
-  --color-header-bg: #084c57; }
+  --color-header-bg: #084c57;
+  --color-cs-alternate-bg: #1f232d; }
 
 @keyframes grid-blur {
   0% {
@@ -48,21 +50,43 @@ h2 {
 
 h3 {
   font-size: 3.2rem;
+  font-weight: 600;
   line-height: 1.5;
-  margin: 6rem 0 1rem 0;
+  margin: 4rem 0 1rem 0;
   color: var(--color-primary-text); }
 
 h4 {
   font-size: 2rem;
   line-height: 1.5;
+  font-weight: 600;
   margin: 3rem 0 1rem 0;
   color: var(--color-primary-text); }
 
+h5 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--color-primary-text);
+  opacity: .5; }
+
 p {
   font-size: 2rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin-bottom: 2rem;
   color: var(--color-primary-text); }
+
+blockquote {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 5rem -5rem;
+  color: var(--color-primary-text); }
+  @media only screen and (max-width: 600px) {
+    blockquote {
+      margin-left: 0;
+      margin-right: 0;
+      text-align: left; } }
 
 .p--large {
   font-size: 2.8rem; }
@@ -76,6 +100,11 @@ ol, ul {
   line-height: 1.5;
   margin-bottom: 2rem;
   color: var(--color-primary-text); }
+
+li {
+  padding-bottom: 1rem; }
+  li h4 {
+    margin-bottom: 0; }
 
 .link-underline:link, .link-underline:visited {
   display: inline-block;
@@ -584,9 +613,12 @@ ol, ul {
   margin-bottom: 6rem; }
 
 .case-study__body {
-  padding: 6rem 0 10rem 0;
   background-color: var(--color-primary-bg);
   transition: color 1s, background-color 1s; }
+  .case-study__body section {
+    padding: 10rem 0; }
+  .case-study__body section:nth-of-type(odd) {
+    background-color: var(--color-cs-alternate-bg); }
 
 @media only screen and (max-width: 530px) {
   .case-study__content-wrapper--md {

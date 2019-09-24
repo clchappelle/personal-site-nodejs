@@ -37,9 +37,15 @@
   }
 
   &__body {
-    padding: 6rem 0 10rem 0;
     background-color: var(--color-primary-bg);
     transition: $theme-transition;
+
+    section {
+      padding: 10rem 0;
+    }
+    section:nth-of-type(odd) {
+      background-color: var(--color-cs-alternate-bg);
+    }
   }
 
   &__content-wrapper--md {

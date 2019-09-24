@@ -5,6 +5,8 @@ $color-white: #fff;
 $color-black: #000;
 $color-yellow: #FDDC4C;
 $color-night-blue: #0c4a87;
+$color-cs-alternate-bg: #F5F4EF;
+$color-cs-alternate-bg-night: #1f232d;
 
 $color-night-text: rgba(255,255,255,.7);
 
@@ -21,6 +23,7 @@ $color-cs2-2: #9CB3D4;
   --color-link-underline: #{$color-yellow};
   --color-grid-square: rgba(0,0,0,.05);
   --color-header-bg: #{$color-header-bg-day};
+  --color-cs-alternate-bg: #{$color-cs-alternate-bg};
 }
 
 [data-theme="dark"] {
@@ -30,6 +33,7 @@ $color-cs2-2: #9CB3D4;
   --color-link-underline: #{$color-night-blue};
   --color-grid-square: rgba(0,0,0,.3);
   --color-header-bg: #{$color-header-bg-night};
+  --color-cs-alternate-bg: #{$color-cs-alternate-bg-night};
 }
 
 $box-shadow-cs-img: 0 30px 60px 0 rgba(0,0,0,0.20);
