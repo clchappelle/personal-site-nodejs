@@ -245,8 +245,7 @@ li {
     margin-top: 6rem; }
 
 .image-full__wrapper {
-  padding: 10rem 0;
-  margin: 10rem 0; }
+  padding: 10rem 0; }
 
 .image-full--foundation-funds {
   background-image: linear-gradient(to right bottom, #837A7D, #BEB7B3); }
@@ -615,15 +614,15 @@ li {
 .case-study__body {
   background-color: var(--color-primary-bg);
   transition: color 1s, background-color 1s; }
-  .case-study__body section {
-    padding: 10rem 0; }
   .case-study__body section:nth-of-type(odd) {
     background-color: var(--color-cs-alternate-bg); }
 
-@media only screen and (max-width: 530px) {
-  .case-study__content-wrapper--md {
-    padding-left: 3rem;
-    padding-right: 3rem; } }
+.case-study__content-wrapper--md {
+  padding: 10rem 0; }
+  @media only screen and (max-width: 530px) {
+    .case-study__content-wrapper--md {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
 
 .case-study__image {
   width: 100%;

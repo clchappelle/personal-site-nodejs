@@ -40,15 +40,16 @@
     background-color: var(--color-primary-bg);
     transition: $theme-transition;
 
-    section {
-      padding: 10rem 0;
-    }
+    // section {
+    //   padding: 10rem 0;
+    // }
     section:nth-of-type(odd) {
       background-color: var(--color-cs-alternate-bg);
     }
   }
 
   &__content-wrapper--md {
+    padding: 10rem 0;
     @media only screen and (max-width : 530px) {
       padding-left: 3rem;
       padding-right: 3rem;
