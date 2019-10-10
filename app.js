@@ -28,6 +28,10 @@ app.get("/increasing-awareness-and-engagement", function(req, res) {
   res.render("case_studies/engagement");
 });
 
+app.get("/experience", function(req, res) {
+  res.render("experience");
+});
+
 const server = app.listen(port, function() {
   console.log("Server started on port " + port);
 });

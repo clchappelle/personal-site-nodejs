@@ -46,7 +46,8 @@ h1 {
 
 h2 {
   font-size: 6rem;
-  line-height: 1.25; }
+  line-height: 1.25;
+  color: var(--color-primary-text); }
 
 h3 {
   font-size: 3.2rem;
@@ -119,6 +120,9 @@ li {
 
 .preload {
   display: none; }
+
+.bold {
+  font-weight: 600; }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -642,3 +646,46 @@ li {
   padding: 3px 10px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 2px; }
+
+.experience__body {
+  background-color: var(--color-primary-bg); }
+
+.experience__header {
+  padding: 10rem 0;
+  background-color: var(--color-cs-alternate-bg); }
+  @media only screen and (max-width: 530px) {
+    .experience__header {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
+
+.experience__section {
+  padding-top: 10rem; }
+  @media only screen and (max-width: 530px) {
+    .experience__section {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
+
+.experience__resume-title {
+  font-size: 1.8rem;
+  opacity: .8;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin-top: 0; }
+
+.experience__role-title {
+  opacity: .5;
+  margin-bottom: 4rem; }
+
+.role__company {
+  margin-bottom: 0; }
+
+.role__title {
+  margin: 0; }
+
+.role__date {
+  margin: 0;
+  margin-bottom: 3rem; }
+
+@media print {
+  .grid--centered-sm {
+    grid-column: 1 / span 12; } }

@@ -1,0 +1,61 @@
+
+.experience {
+
+  &__body {
+    background-color: var(--color-primary-bg);
+  }
+
+  &__header {
+    padding: 10rem 0;
+    background-color: var(--color-cs-alternate-bg);
+
+    @media only screen and (max-width : 530px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  &__section {
+    padding-top: 10rem;
+
+    @media only screen and (max-width : 530px) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  &__resume-title {
+    font-size: 1.8rem;
+    opacity: .8;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-top: 0;
+  }
+
+  &__role-title {
+    opacity: .5;
+    margin-bottom: 4rem;
+  }
+
+}
+
+.role {
+  &__company {
+    margin-bottom: 0;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__date{
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
+
+}
+
+@media print {
+  .grid--centered-sm {
+    grid-column: 1 / span 12;
+  }
+}
