@@ -509,7 +509,7 @@ li {
   .header__text-box {
     top: 23rem; }
   .triangle {
-    bottom: 3rem; } }
+    bottom: 5rem; } }
 
 @media only screen and (max-width: 320px) {
   .header__text-box {
