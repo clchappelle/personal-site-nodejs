@@ -47,4 +47,14 @@ $font-size-default: 2rem;
 
 
 // Home Header spacing
-$header-height: 95vh
+// $header-height: 95vh;
+
+:root {
+   --header-height: 95vh;
+}
+
+@media only screen and (max-width: 375px) {
+  :root {
+    --header-height: 75vh;
+  }
+}

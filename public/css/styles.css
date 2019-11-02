@@ -16,6 +16,13 @@
   --color-header-bg: #084c57;
   --color-cs-alternate-bg: #1f232d; }
 
+:root {
+  --header-height: 95vh; }
+
+@media only screen and (max-width: 375px) {
+  :root {
+    --header-height: 75vh; } }
+
 @keyframes grid-blur {
   0% {
     filter: blur(20px); }
@@ -389,7 +396,7 @@ li {
 
 /* Header */
 .header {
-  height: 95vh;
+  height: var(--header-height);
   width: 100vw;
   position: fixed;
   top: 0;
@@ -398,7 +405,7 @@ li {
 
 /* Grid in header bg */
 .header__background-grid-wrapper {
-  height: 95vh;
+  height: var(--header-height);
   position: relative; }
 
 .header__background-grid {
@@ -427,7 +434,7 @@ li {
 .background-slide {
   background-color: var(--color-header-bg);
   width: 100vw;
-  height: 95vh;
+  height: var(--header-height);
   position: absolute;
   right: 0;
   top: 0;
@@ -523,7 +530,7 @@ li {
   position: relative;
   width: 100%;
   background: var(--color-primary-bg);
-  top: 95vh;
+  top: var(--header-height);
   transition: color 1s, background-color 1s; }
 
 .about {
@@ -600,7 +607,7 @@ li {
   margin-bottom: 1rem; }
 
 .home-footer {
-  transform: translateY(95vh); }
+  transform: translateY(var(--header-height)); }
 
 .case-study__header--1 {
   background-image: linear-gradient(to right bottom, #837A7D, #BEB7B3); }

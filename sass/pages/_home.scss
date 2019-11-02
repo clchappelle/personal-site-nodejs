@@ -41,7 +41,7 @@
 
 /* Header */
 .header {
-  height: 95vh;
+  height: var(--header-height);
   width: 100vw;
   position: fixed;
   top: 0;
@@ -52,7 +52,7 @@
 /* Grid in header bg */
 
 .header__background-grid-wrapper {
-  height: 95vh;
+  height: var(--header-height);
   position: relative;
 }
 
@@ -87,7 +87,7 @@
 .background-slide {
   background-color: var(--color-header-bg);
   width: 100vw;
-  height: 95vh;
+  height: var(--header-height);
   position: absolute;
   right: 0;
   top:0;
@@ -225,7 +225,7 @@
   position: relative;
   width: 100%;
   background: var(--color-primary-bg);
-  top: 95vh;
+  top: var(--header-height);
   transition: $theme-transition;
 }
 
@@ -323,5 +323,5 @@
 }
 
 .home-footer {
-  transform: translateY(95vh);
+  transform: translateY(var(--header-height));
 }
