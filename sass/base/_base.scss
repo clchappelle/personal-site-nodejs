@@ -7,15 +7,15 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; //10px
   scroll-behavior: smooth;
 
   @media only screen and (max-width: 768px) {
-    font-size: 50%;
+    font-size: 50%; //8px
   }
 
   @media only screen and (max-width: 375px) {
-    font-size: 37.5%; 
+    font-size: 43.75%; //7px 
   }
 }
 
