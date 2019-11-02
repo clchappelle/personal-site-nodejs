@@ -187,6 +187,7 @@
   }
   .heading--primary {
     font-size: 8rem;
+    line-height: 1.4
   }
   .text-animate-wrapper {
     margin-top: -4rem;
@@ -213,7 +214,7 @@
 
 @media only screen and (max-width : 320px) {
   .header__text-box {
-    padding: 0 30px;
+    // padding: 0 30px;
   }
 }
 

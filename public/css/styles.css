@@ -35,6 +35,9 @@ html {
   @media only screen and (max-width: 768px) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 375px) {
+    html {
+      font-size: 37.5%; } }
 
 body {
   background-color: #F7F3F0;
@@ -58,6 +61,9 @@ h3 {
   line-height: 1.5;
   margin: 4rem 0 1rem 0;
   color: var(--color-primary-text); }
+  @media only screen and (max-width: 375px) {
+    h3 {
+      margin-top: 2rem; } }
 
 h4 {
   font-size: 2rem;
@@ -496,7 +502,8 @@ li {
   .header__text-box {
     top: 26rem; }
   .heading--primary {
-    font-size: 8rem; }
+    font-size: 8rem;
+    line-height: 1.4; }
   .text-animate-wrapper {
     margin-top: -4rem; }
   .text-animate-wrapper--group-two {
@@ -510,10 +517,6 @@ li {
     top: 23rem; }
   .triangle {
     bottom: 5rem; } }
-
-@media only screen and (max-width: 320px) {
-  .header__text-box {
-    padding: 0 30px; } }
 
 /* Main content */
 .content {
@@ -639,6 +642,9 @@ li {
     .case-study__content-wrapper--md {
       padding-left: 3rem;
       padding-right: 3rem; } }
+  @media only screen and (max-width: 375px) {
+    .case-study__content-wrapper--md {
+      padding: 5rem 3rem; } }
 
 .case-study__image {
   width: 100%;
