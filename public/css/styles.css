@@ -537,12 +537,18 @@ li {
   @media only screen and (max-width: 1000px) {
     .about__bio {
       grid-column: 2 / span 10; } }
+  @media only screen and (max-width: 375px) {
+    .about__bio {
+      grid-column: 1 / span 12; } }
 
 .bio__header {
   font-size: 3.2rem;
   line-height: 1.5;
   font-weight: 400;
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 375px) {
+    .bio__header {
+      font-size: 2.8rem; } }
 
 .about__contact {
   grid-column: 2 / span 3;
@@ -552,6 +558,9 @@ li {
     .about__contact {
       grid-column: 2 / span 10;
       grid-row: 2; } }
+  @media only screen and (max-width: 375px) {
+    .about__contact {
+      grid-column: 1 / span 12; } }
 
 .about__contact__item {
   margin-bottom: 2rem; }

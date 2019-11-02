@@ -244,6 +244,9 @@
   @media only screen and (max-width : 1000px) {
     grid-column: 2 / span 10;
   }
+  @media only screen and (max-width : 375px) {
+    grid-column: 1 / span 12;
+  }
 }
 
 .bio__header {
@@ -251,6 +254,9 @@
   line-height: 1.5;
   font-weight: 400;
   margin-bottom: 2rem;
+  @media only screen and (max-width : 375px) {
+    font-size: 2.8rem
+  }
 }
 
 .about__contact {
@@ -261,6 +267,10 @@
   @media only screen and (max-width : 1000px) {
     grid-column: 2 / span 10;
     grid-row: 2;
+  }
+
+  @media only screen and (max-width : 375px) {
+    grid-column: 1 / span 12;
   }
 }
 
