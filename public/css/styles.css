@@ -42,9 +42,6 @@ html {
   @media only screen and (max-width: 768px) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 375px) {
-    html {
-      font-size: 43.75%; } }
 
 body {
   background-color: #F7F3F0;
