@@ -9,7 +9,6 @@ AOS.init({duration: 1200});
 setTheme();
 
 function toggleTheme() {
-  evt.preventDefault();
   var currentTheme = document.documentElement.getAttribute("data-theme");
   // theme === 'light' ? localStorage.setItem('theme', 'dark') : localStorage.setItem('theme', 'light');
   if (currentTheme === 'light') {
@@ -39,7 +38,6 @@ function setTheme() {
 
 }
 
-document.querySelector('.btn-theme-switch').addEventListener("touchstart", toggleTheme); // Toggle theme when button is touched (mobile)
 document.querySelector('.btn-theme-switch').addEventListener("click", toggleTheme); // Toggle theme when button is clicked
 
 //////// Element animations - using anime.js ////////
