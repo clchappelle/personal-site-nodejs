@@ -12,6 +12,12 @@
 
   &__header-content {
     padding: 10rem 3rem 10rem 3rem;
+
+    video {
+      border: 15px solid black;
+      border-radius: 10px;
+      box-shadow: $box-shadow-cs-img;
+    }
   }
 
   &__company {

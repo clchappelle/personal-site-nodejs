@@ -614,6 +614,10 @@ li {
 
 .case-study__header-content {
   padding: 10rem 3rem 10rem 3rem; }
+  .case-study__header-content video {
+    border: 15px solid black;
+    border-radius: 10px;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2); }
 
 .case-study__company {
   font-size: 4rem;
