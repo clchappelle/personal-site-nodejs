@@ -40,6 +40,7 @@ function setTheme() {
 
 document.querySelector('.btn-theme-switch').addEventListener("click", toggleTheme); // Toggle theme when button is clicked
 
+
 //////// Element animations - using anime.js ////////
 anime({
   targets: '.site-navigation',
