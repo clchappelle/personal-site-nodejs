@@ -47,7 +47,11 @@
     color: rgba(0,0,0,.9);
     font-weight: 600;
     margin-top: 1rem;
-    margin-bottom: 3.3rem;
+  }
+
+  &__description {
+    margin-bottom: 5rem;
+    width: 80%;
   }
 
   &__role {
