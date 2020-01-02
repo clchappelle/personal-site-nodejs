@@ -1,0 +1,102 @@
+<%- include("../partials/header.ejs"); %>
+
+<header class="header application-header">
+  <div class="header__background-grid-wrapper">
+    <div class="header__background-grid" id="header__background-grid"></div>
+  </div>
+
+  <div class="background-slide"></div>
+
+  <%- include("../partials/main-nav.ejs"); %>
+
+  <div class="application-header__text-wrapper">
+    <h1 class="">Hi ZeroDown, <br />I’m Chris. </h1>
+  </div>
+
+  <div class="header__personal-photo-box">
+    <img src="images/me-header.png" class="header__personal-photo" alt="Chris Chappelle - Product Designer">
+  </div>
+
+  <div class="triangle"></div>
+
+</header>
+<!-- End header -->
+
+<main class="content application">
+  <div class="case-study__body">
+    <section class="grid">
+      <div class="case-study__content-wrapper--md grid--centered-sm">
+        <p class="p--large">I see that you're hiring a product designer, and I'm excited to throw my hat in the ring. My plan is simple. First, I'll explain why I'm so excited to apply. Next, I'll share why I think I would be a great fit for this role.</p>
+        <p class="p--large">Let's get to it.</p>
+    </section>
+
+    <section class="grid">
+      <div class="case-study__content-wrapper--md grid--centered-sm">
+        <h5>Why ZeroDown</h5>
+        <h3 class="section-title">I love what you’re up to…</h3>
+        <p class="p--large">For the past 10+ years, I've lived in San Francisco and before that in Seattle. I hear the same struggle from people in all different career paths - people in tech, nursing, law, music. <i>I'm never going to be able to afford a house here.</i> I have the same feeling and I want to change this.</p>
+        <p class="p--large">More broadly, my father used to run a small home construction business and my brother is training to be an architect. The idea of building and owning a home is something that's been with me since I was a child. I'd love to help everyone move into a house that they love. </p>
+        <p class="p--large">Beyond personal motivation, I also believe I would be great skill fit.</p>
+    </section>
+
+    <section class="grid">
+      <div class="case-study__content-wrapper--md grid--centered-sm">
+        <h5>Why me</h5>
+        <p class="p--large p--bold">First, I'm comfortable contributing to high-level design decisions and doing the nitty gritty design work.</p>
+        <p class="p--large">As a startup with a growing team, you need someone who can do both. In my previous role I joined the founding team of Bright Funds as the company's first designer. I helped grow the product from a rough prototype to what is now used by companies ranging from startups to Fortune 500s including Box, VMware, Cisco, and GitHub. Depending on the project, I can jump from reframing problems and mapping out solution or tweaking the HMTL and CSS.</p>
+        <p class="p--large p--bold">Second, I do what it takes to deliver.</p>
+        <p class="p--large">Whether the challenge is big, the solution unclear, or next steps unsorted, I jump in and get my hands dirty. I work through what something should do, how it works, how it looks, and how to get it done. As a designer, of course this means designing the interface and developing prototypes. But beyond that, it could also mean pulling in team members to work on copy, getting internal feedback, and talking with customers.</p>
+        <p class="p--large p--bold">Lastly, I'm all in.</p>
+        <p class="p--large">I decided from the start of my career to work at companies that I personally believe in. I'm not here to take the easy path. I'm here to show up and put in my all. This also means being a team player and bringing the right energy. Because when we're committed to what we're building, we're all here for the same reason.</p>
+        <p class="p--large">I think we'd do incredible work together. I know we don't know each other personally, but I look forward to the chance to chat. I'd love to help your team bring home ownership within everyone's reach.</p>
+        <p class="p--large">Thanks for your time,</p>
+        <img src="../images/applications/signature.png" alt="signature" class="application__signature">
+    </section>
+  </div>
+
+  <section>
+    <section class="grid">
+      <div class="case-study__content-wrapper--md grid--centered-sm">
+        <h3 class="text-center">Case studies</h3>
+        <p class="text-center">Here are a few projects I've worked on. I carry most projects from start to finish. I've lead design on large new product initiatives, iterative updates, and everything in between.</p>
+      </div>
+    </section>
+
+    <div class="case-studies" id="case-studies">
+
+      <div class="case-study-preview grid case-study-preview__gradient--1"  data-aos="fade-up">
+          <div class="case-study-preview__image">
+            <img src="../images/home/case-study_foundation-funds.jpg" class="case-study-preview__img" alt="Foundation Fund Product Design Case Study">
+          </div>
+          <div class="case-study-preview__content">
+            <h4 class="case-study-preview__count">Case study 1 of 2</h4>
+            <h3 class="case-study-preview__title">Foundation Funds</h3>
+            <p class="case-study-preview__description">Helping people make smart decisions with their giving.</p>
+            <div class="case-study-preview__role">Focus: <span class="definition-badge">New product offering</span></div>
+            <a href="foundation-funds" class="btn btn--black">View project</a>
+          </div>
+      </div>
+
+      <div class="case-study-preview grid case-study-preview__gradient--2"  data-aos="fade-up">
+        <div class="case-study-preview__content">
+          <h4 class="case-study-preview__count">Case study 2 of 2</h4>
+          <h3 class="case-study-preview__title">Awareness and Engagement</h3>
+          <p class="case-study-preview__description">Spreading awareness and increasing engagement of workplace giving and volunteering benefits.</p>
+          <div class="case-study-preview__role">Focus: <span class="definition-badge">Engagement</span></div>
+          <a href="increasing-awareness-and-engagement" class="btn btn--black">View project</a>
+        </div>
+        <div class="case-study-preview__image">
+          <img src="../images/cs-engagement/header-image-02.png" class="case-study-preview__img case-study-preview__img--no-shadow" alt="Foundation Fund Product Design Case Study">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<div class="home-footer">
+  <%- include("../partials/footer.ejs"); %>
+</div>

@@ -58,7 +58,7 @@ homeAnimation();
 
 //////// Home animation
 function homeAnimation() {
-  if (window.location.pathname == '/') {
+  if (window.location.pathname == '/' || '/zerodown') {
     //Animate in the text
 
     // Wrap every letter in a span
