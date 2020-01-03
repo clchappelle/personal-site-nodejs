@@ -265,8 +265,7 @@ li {
     color: var(--color-primary-text);
     margin-bottom: 6rem; }
   .case-study-preview__img {
-    width: 100%;
-    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2); }
+    width: 100%; }
     .case-study-preview__img--no-shadow {
       box-shadow: none; }
   @media only screen and (max-width: 860px) {
