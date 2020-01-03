@@ -73,11 +73,13 @@
   }
 
   &__footer {
+    background-color: var(--color-cs-alternate-bg);
     text-align: center;
     padding: 10rem 3rem;
   }
 
   &__footer-title {
+    color: var(--color-primary-text);
     margin-bottom: 6rem;
   }
 

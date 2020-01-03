@@ -25,6 +25,8 @@ $color-cs2-2: #9CB3D4;
   --color-grid-square: rgba(0,0,0,.05);
   --color-header-bg: #{$color-header-bg-day};
   --color-cs-alternate-bg: #{$color-cs-alternate-bg};
+  --color-button-black: #{$color-black};
+  --color-button-black-hover: #{$color-white};
 }
 
 [data-theme="dark"] {
@@ -35,6 +37,8 @@ $color-cs2-2: #9CB3D4;
   --color-grid-square: rgba(0,0,0,.3);
   --color-header-bg: #{$color-header-bg-night};
   --color-cs-alternate-bg: #{$color-cs-alternate-bg-night};
+  --color-button-black: #{$color-night-text};
+  --color-button-black-hover: #{$color-black};
 }
 
 $box-shadow-cs-img: 0 30px 60px 0 rgba(0,0,0,0.20);

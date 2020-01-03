@@ -5,7 +5,9 @@
   --color-link-underline: #FDDC4C;
   --color-grid-square: rgba(0,0,0,.05);
   --color-header-bg: #D9A507;
-  --color-cs-alternate-bg: #F5F4EF; }
+  --color-cs-alternate-bg: #F5F4EF;
+  --color-button-black: #000;
+  --color-button-black-hover: #fff; }
 
 [data-theme="dark"] {
   --color-primary-bg: #000;
@@ -14,7 +16,9 @@
   --color-link-underline: #0c4a87;
   --color-grid-square: rgba(0,0,0,.3);
   --color-header-bg: #084c57;
-  --color-cs-alternate-bg: #1f232d; }
+  --color-cs-alternate-bg: #1f232d;
+  --color-button-black: rgba(255, 255, 255, 0.7);
+  --color-button-black-hover: #000; }
 
 :root {
   --header-height: 95vh; }
@@ -192,8 +196,11 @@ li {
   transform: translateY(-1px); }
 
 .btn--black {
-  color: #fff;
-  background-color: black; }
+  color: var(--color-white);
+  background-color: var(--color-button-black); }
+  .btn--black:hover {
+    color: var(--color-primary-text);
+    background-color: var(--color-button-black-hover); }
 
 .btn-theme-switch {
   border: none;
@@ -219,9 +226,9 @@ li {
 .case-study-preview {
   padding: 10rem 1rem; }
   .case-study-preview__gradient--1 {
-    background-image: linear-gradient(to right bottom, #837A7D, #BEB7B3); }
+    background-image: linear-gradient(to right bottom, rgba(131, 122, 125, 0.1), rgba(190, 183, 179, 0.1)); }
   .case-study-preview__gradient--2 {
-    background-image: linear-gradient(to right bottom, #56647B, #9CB3D4); }
+    background-image: linear-gradient(to right bottom, rgba(86, 100, 123, 0.1), rgba(156, 179, 212, 0.1)); }
   .case-study-preview__image {
     grid-column: span 6;
     padding: 3rem;
@@ -240,14 +247,14 @@ li {
         padding: 0 3rem; } }
   .case-study-preview__count {
     font-size: 1.8rem;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--color-primary-text);
     letter-spacing: 1px;
     font-weight: 300;
     margin-top: 0; }
   .case-study-preview__title {
     font-size: 4.6rem;
     line-height: 1.4;
-    color: rgba(0, 0, 0, 0.9);
+    color: var(--color-primary-text);
     font-weight: 600;
     margin-top: 1rem; }
   .case-study-preview__description {
@@ -255,7 +262,7 @@ li {
     width: 80%; }
   .case-study-preview__role {
     font-size: 2rem;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--color-primary-text);
     margin-bottom: 6rem; }
   .case-study-preview__img {
     width: 100%;
@@ -699,10 +706,12 @@ li {
   border-radius: 3px; }
 
 .case-study__footer {
+  background-color: var(--color-cs-alternate-bg);
   text-align: center;
   padding: 10rem 3rem; }
 
 .case-study__footer-title {
+  color: var(--color-primary-text);
   margin-bottom: 6rem; }
 
 .definition-badge {

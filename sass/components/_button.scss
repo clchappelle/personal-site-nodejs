@@ -23,8 +23,12 @@
   }
 
   &--black {
-    color: #fff;
-    background-color: black;
+    color: var(--color-white);
+    background-color: var(--color-button-black);
+    &:hover {
+      color: var(--color-primary-text);
+      background-color: var(--color-button-black-hover);
+    }
   }
 
 }

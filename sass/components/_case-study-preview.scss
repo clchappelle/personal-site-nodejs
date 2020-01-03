@@ -3,11 +3,11 @@
 
   &__gradient {
     &--1 {
-      background-image: linear-gradient(to right bottom, $color-cs1-1, $color-cs1-2);
+      background-image: linear-gradient(to right bottom, rgba($color-cs1-1, .1), rgba($color-cs1-2, .1));
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $color-cs2-1, $color-cs2-2);
+      background-image: linear-gradient(to right bottom, rgba($color-cs2-1, .1), rgba($color-cs2-2, .1));
     }
   }
 
@@ -35,7 +35,7 @@
 
   &__count {
     font-size: 1.8rem;
-    color: rgba(0,0,0,.8);
+    color: var(--color-primary-text);
     letter-spacing: 1px;
     font-weight: 300;
     margin-top: 0;
@@ -44,7 +44,7 @@
   &__title {
     font-size: 4.6rem;
     line-height: 1.4;
-    color: rgba(0,0,0,.9);
+    color: var(--color-primary-text);
     font-weight: 600;
     margin-top: 1rem;
   }
@@ -56,7 +56,7 @@
 
   &__role {
     font-size: 2rem;
-    color: rgba(0,0,0,.8);
+    color: var(--color-primary-text);
     margin-bottom: 6rem;
   }
 
