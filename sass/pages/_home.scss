@@ -310,6 +310,41 @@
   transform: translateY(10px);
 }
 
+.principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3rem;
+  padding: 6rem;
+  background-color: $color-black;
+  margin: 1rem;
+
+  > * {
+    padding: 2rem;
+  }
+
+  &__title {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    align-self: center;
+    justify-self: center;
+    color: $color-header-bg-day;
+  }
+
+  &__principle {
+    background-color: rgba(255, 255, 255,.1);
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 0;
+  }
+
+  &__principle-desc {
+    opacity: .5;
+  }
+
+
+}
+
 .post {
   max-width: 80rem;
   margin: 0 auto;
