@@ -272,6 +272,9 @@ li {
     .case-study-preview {
       padding: 8rem 1rem; } }
 
+.case-study-preview:not(:last-child) {
+  margin-bottom: 1rem; }
+
 .footer {
   background-color: var(--color-white);
   text-align: center;
@@ -647,7 +650,7 @@ li {
   grid-gap: 3rem;
   padding: 6rem;
   background-color: #000;
-  margin: 1rem; }
+  margin: 0 1rem; }
   @media only screen and (max-width: 1100px) {
     .principles {
       grid-template-columns: repeat(2, 1fr); } }
@@ -680,6 +683,10 @@ li {
 
 .post__title {
   margin-bottom: 1rem; }
+
+.case-studies {
+  padding: 1rem;
+  background-color: var(--color-primary-bg); }
 
 .home-footer {
   transform: translateY(var(--header-height)); }
