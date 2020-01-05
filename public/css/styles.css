@@ -644,11 +644,13 @@ li {
 .principles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-gap: 3rem;
   padding: 6rem;
   background-color: #000;
   margin: 1rem; }
+  @media only screen and (max-width: 1100px) {
+    .principles {
+      grid-template-columns: repeat(2, 1fr); } }
   .principles > * {
     padding: 2rem; }
   .principles__title {
@@ -657,11 +659,18 @@ li {
     align-self: center;
     justify-self: center;
     color: #D9A507; }
+    @media only screen and (max-width: 1100px) {
+      .principles__title {
+        grid-column: 1 / -1;
+        grid-row: 1; } }
   .principles__principle {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
     border-radius: 3px;
     margin-bottom: 0; }
+    @media only screen and (max-width: 500px) {
+      .principles__principle {
+        grid-column: 1 / -1; } }
   .principles__principle-desc {
     opacity: .5; }
 
