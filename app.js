@@ -28,6 +28,10 @@ app.get("/increasing-awareness-and-engagement", function(req, res) {
   res.render("case_studies/engagement");
 });
 
+app.get("/styleguide", function(req, res) {
+  res.render("case_studies/bf_styleguide");
+});
+
 app.get("/zerodown", function(req, res) {
   res.render("companies/zerodown");
 });
