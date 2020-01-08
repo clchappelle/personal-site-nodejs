@@ -155,16 +155,17 @@ var controller = (function(UIctrl) {
 
   // SETUP EVENT LISTENERS
   var setupEventListeners = function() {
-
-    window.addEventListener('load', function() {
-
-      if (window.location.pathname == '/' || '/zerodown') {
-        UIctrl.homeAnimation();
-      }
-
-    });
-
     document.querySelector('.btn-theme-switch').addEventListener('click', toggleTheme); // Toggle theme when button is clicked
+  };
+
+  var triggerAnimations = function() {
+    UIctrl.navigationAnimation();
+
+    if (window.location.pathname == '/' || '/zerodown') {
+      UIctrl.homeAnimation();
+    }
+
+    UIctrl.AOSinit();
   };
 
 
@@ -185,8 +186,7 @@ var controller = (function(UIctrl) {
       console.log('Application has started');
       setupEventListeners();
       UIctrl.setTheme();
-      UIctrl.navigationAnimation();
-      UIctrl.AOSinit();
+      triggerAnimations();
     }
   };
 
