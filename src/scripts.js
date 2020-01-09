@@ -124,12 +124,12 @@ var UIController = (function() {
       if (theme === 'dark') {
         document.querySelector('.btn-theme-switch').innerHTML = '🌚';
         if (window.location.pathname == '/') {
-          document.querySelector('.header__personal-photo').src="images/me-header-dark.png";
+          document.querySelector('.header__personal-photo').src="images/home/me-night.svg";
         }
       } else {
         document.querySelector('.btn-theme-switch').innerHTML = '🌝';
         if (window.location.pathname == '/') {
-          document.querySelector('.header__personal-photo').src="images/me-header.png";
+          document.querySelector('.header__personal-photo').src="images/home/me.svg";
         }
       }
     }

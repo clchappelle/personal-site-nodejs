@@ -468,13 +468,11 @@ li {
 /* Header photo */
 .header__personal-photo-box {
   position: absolute;
-  top: 0rem;
-  left: 0rem; }
+  top: 8rem;
+  left: 8.5rem; }
 
 .header__personal-photo {
-  width: 25rem;
-  border-right: 10px solid #EEE4D8;
-  border-bottom: 10px solid #EEE4D8; }
+  width: 12rem; }
 
 .background-slide {
   background-color: var(--color-header-bg);
