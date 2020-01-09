@@ -121,7 +121,7 @@ var UIController = (function() {
         direction: 'alternate', // Is not inherited
         loop: true,
         translateY: '-.8rem',
-        easing: 'spring(1, 10, 20, 0)'
+        easing: 'spring(1, 5, 5, 0)'
       });
     },
 
