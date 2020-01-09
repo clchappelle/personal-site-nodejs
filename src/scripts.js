@@ -115,6 +115,16 @@ var UIController = (function() {
       });
     },
 
+    logoAnimation: function() {
+      anime({
+        targets: '.header__personal-photo',
+        direction: 'alternate', // Is not inherited
+        loop: true,
+        translateY: '-.5rem',
+        easing: 'spring(1, 10, 20, 0)'
+      });
+    },
+
     // Set light or dark theme
     setTheme: function() {
       var theme = localStorage.getItem("theme");
@@ -187,6 +197,7 @@ var controller = (function(UIctrl) {
       UIctrl.setTheme();
       UIctrl.navigationAnimation();
       UIctrl.AOSinit();
+      UIctrl.logoAnimation();
     }
   };
 
