@@ -153,11 +153,14 @@
 }
 
 @media only screen and (max-width : 768px) {
+  .header__personal-photo-box {
+    left: 3rem;
+  }
   .header__personal-photo {
-    width: 20rem;
+    width: 16rem;
   }
   .header__text-box {
-    top: 30rem;
+    top: 32rem;
     margin: 0 30px;
     left: 0;
     width: 100%;
@@ -171,6 +174,9 @@
   .text-animate-wrapper {
     margin-top: -6rem;
   }
+  .text-animate-wrapper--group-two {
+    left: 0;
+  }
   .heading--shift-right {
     left: 0;
   }
@@ -180,6 +186,10 @@
 }
 
 @media only screen and (max-width : 530px) {
+  .header__personal-photo {
+    width: 12rem;
+  }
+
   .header__text-box {
     top: 26rem;
   }

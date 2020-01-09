@@ -120,7 +120,7 @@ var UIController = (function() {
         targets: '.header__personal-photo',
         direction: 'alternate', // Is not inherited
         loop: true,
-        translateY: '-.5rem',
+        translateY: '-.8rem',
         easing: 'spring(1, 10, 20, 0)'
       });
     },
@@ -177,6 +177,12 @@ var controller = (function(UIctrl) {
     document.querySelector('.btn-theme-switch').addEventListener('click', toggleTheme); // Toggle theme when button is clicked
   };
 
+  var triggerAnimations = function() {
+    UIctrl.navigationAnimation();
+    UIctrl.AOSinit();
+    UIctrl.logoAnimation();
+  };
+
 
   // THEME
   var toggleTheme = function() {
@@ -195,9 +201,7 @@ var controller = (function(UIctrl) {
       console.log('Application has started');
       setupEventListeners();
       UIctrl.setTheme();
-      UIctrl.navigationAnimation();
-      UIctrl.AOSinit();
-      UIctrl.logoAnimation();
+      triggerAnimations();
     }
   };
 
