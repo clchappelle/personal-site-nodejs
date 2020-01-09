@@ -387,28 +387,6 @@ li {
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2);
     align-self: center; }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr); }
-  .grid--max {
-    grid-column: 1 / span 12; }
-  .grid--centered {
-    grid-column: 3 / span 8; }
-    @media only screen and (max-width: 1200px) {
-      .grid--centered {
-        grid-column: 2 / span 10; } }
-    @media only screen and (max-width: 530px) {
-      .grid--centered {
-        grid-column: 1 / span 12; } }
-  .grid--centered-sm {
-    grid-column: 4 / span 6; }
-    @media only screen and (max-width: 1200px) {
-      .grid--centered-sm {
-        grid-column: 3 / span 8; } }
-    @media only screen and (max-width: 530px) {
-      .grid--centered-sm {
-        grid-column: 1 / span 12; } }
-
 .site-navigation {
   position: fixed;
   top: 1rem;
@@ -439,6 +417,28 @@ li {
 .site-navigation__name {
   margin-right: 1rem; }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+  .grid--max {
+    grid-column: 1 / span 12; }
+  .grid--centered {
+    grid-column: 3 / span 8; }
+    @media only screen and (max-width: 1200px) {
+      .grid--centered {
+        grid-column: 2 / span 10; } }
+    @media only screen and (max-width: 530px) {
+      .grid--centered {
+        grid-column: 1 / span 12; } }
+  .grid--centered-sm {
+    grid-column: 4 / span 6; }
+    @media only screen and (max-width: 1200px) {
+      .grid--centered-sm {
+        grid-column: 3 / span 8; } }
+    @media only screen and (max-width: 530px) {
+      .grid--centered-sm {
+        grid-column: 1 / span 12; } }
+
 /* Header */
 .header {
   height: var(--header-height);
@@ -468,13 +468,11 @@ li {
 /* Header photo */
 .header__personal-photo-box {
   position: absolute;
-  top: 0rem;
-  left: 0rem; }
+  top: 8rem;
+  left: 8.5rem; }
 
 .header__personal-photo {
-  width: 25rem;
-  border-right: 10px solid #EEE4D8;
-  border-bottom: 10px solid #EEE4D8; }
+  width: 12rem; }
 
 .background-slide {
   background-color: var(--color-header-bg);
@@ -532,10 +530,12 @@ li {
     margin-top: -8rem; } }
 
 @media only screen and (max-width: 768px) {
+  .header__personal-photo-box {
+    left: 3rem; }
   .header__personal-photo {
-    width: 20rem; }
+    width: 16rem; }
   .header__text-box {
-    top: 30rem;
+    top: 32rem;
     margin: 0 30px;
     left: 0;
     width: 100%; }
@@ -545,12 +545,16 @@ li {
     font-size: 12rem; }
   .text-animate-wrapper {
     margin-top: -6rem; }
+  .text-animate-wrapper--group-two {
+    left: 0; }
   .heading--shift-right {
     left: 0; }
   .triangle {
     left: calc(80vw - 40px); } }
 
 @media only screen and (max-width: 530px) {
+  .header__personal-photo {
+    width: 12rem; }
   .header__text-box {
     top: 26rem; }
   .heading--primary {

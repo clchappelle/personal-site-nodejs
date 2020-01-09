@@ -115,6 +115,16 @@ var UIController = (function() {
       });
     },
 
+    logoAnimation: function() {
+      anime({
+        targets: '.header__personal-photo',
+        direction: 'alternate', // Is not inherited
+        loop: true,
+        translateY: '-.8rem',
+        easing: 'spring(1, 5, 5, 0)'
+      });
+    },
+
     // Set light or dark theme
     setTheme: function() {
       var theme = localStorage.getItem("theme");
@@ -124,12 +134,12 @@ var UIController = (function() {
       if (theme === 'dark') {
         document.querySelector('.btn-theme-switch').innerHTML = '🌚';
         if (window.location.pathname == '/') {
-          document.querySelector('.header__personal-photo').src="images/me-header-dark.png";
+          document.querySelector('.header__personal-photo').src="images/home/me-night.svg";
         }
       } else {
         document.querySelector('.btn-theme-switch').innerHTML = '🌝';
         if (window.location.pathname == '/') {
-          document.querySelector('.header__personal-photo').src="images/me-header.png";
+          document.querySelector('.header__personal-photo').src="images/home/me.svg";
         }
       }
     }
@@ -167,6 +177,12 @@ var controller = (function(UIctrl) {
     document.querySelector('.btn-theme-switch').addEventListener('click', toggleTheme); // Toggle theme when button is clicked
   };
 
+  var triggerAnimations = function() {
+    UIctrl.navigationAnimation();
+    UIctrl.AOSinit();
+    UIctrl.logoAnimation();
+  };
+
 
   // THEME
   var toggleTheme = function() {
@@ -185,8 +201,7 @@ var controller = (function(UIctrl) {
       console.log('Application has started');
       setupEventListeners();
       UIctrl.setTheme();
-      UIctrl.navigationAnimation();
-      UIctrl.AOSinit();
+      triggerAnimations();
     }
   };
 
