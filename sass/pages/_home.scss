@@ -166,24 +166,11 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .header__personal-photo {
-    width: 14rem;
-  }
-
-  .header__text-box {
-    top: 23rem;
-  }
-
   .triangle {
     bottom: 5rem;
   }
 }
 
-@media only screen and (max-width : 320px) {
-  .header__text-box {
-    // padding: 0 30px;
-  }
-}
 
 
 /* Main content */

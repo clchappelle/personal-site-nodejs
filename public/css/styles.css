@@ -567,10 +567,6 @@ li {
     margin-top: 4rem; } }
 
 @media only screen and (max-width: 375px) {
-  .header__personal-photo {
-    width: 14rem; }
-  .header__text-box {
-    top: 23rem; }
   .triangle {
     bottom: 5rem; } }
 
