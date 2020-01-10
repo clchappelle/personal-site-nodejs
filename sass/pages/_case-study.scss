@@ -20,6 +20,33 @@
     }
   }
 
+  &__details {
+    grid-column: 2 / span 10;
+    grid-gap: 6rem;
+    padding: 3rem 0;
+
+    li {
+      padding-bottom: 0;
+    }
+
+    @media only screen and(max-width: 530px) {
+      grid-gap: 0;
+    }
+
+  }
+
+  &__details-section {
+    grid-column: span 4;
+
+    @media only screen and(max-width: 530px) {
+      grid-column: span 12;
+    }
+  }
+
+  &__details-description {
+    opacity: .5;
+  }
+
   &__company {
     font-size: 4rem;
     color: black;
@@ -64,6 +91,72 @@
     @media only screen and (max-width: 375px) {
       padding: 5rem 3rem;
     }
+  }
+
+  &__introducing {
+    align-items: center;
+    padding: 10rem 0;
+  }
+
+  &__introducing-text {
+    grid-column: 3 / span 4;
+    @media only screen and(max-width: 920px) {
+      grid-column: 3 / span 8;
+      margin-bottom: 6rem;
+    }
+
+    @media only screen and(max-width: 530px) {
+      grid-column: 1 / span 12;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  &__introducing-title {
+
+  }
+
+  &__introducing-description {
+    margin-top: 3rem;;
+  }
+  &__introducing-image {
+    grid-column: span 4;
+    img {
+      width: 282px;
+      float: right;
+      @media only screen and(max-width: 920px) {
+        float: left;
+      }
+    }
+
+    @media only screen and(max-width: 920px) {
+      grid-column: 3 / span 8;
+    }
+  }
+
+  &__problem-section {
+    background-color: var(--color-header-bg) !important;
+  }
+
+  &__problems {
+    grid-column: 2 / span 10;
+    grid-gap: 3rem;
+    padding-bottom: 6rem;
+  }
+
+  &__problem {
+    grid-column: span 4;
+    background-color: var(--color-primary-bg);
+    box-shadow: $box-shadow-cs-img;
+    padding: 3rem;
+
+    @media only screen and(max-width: 530px) {
+      grid-column: 1 / span 12;
+    }
+  }
+
+  &__problem-title {
+    opacity: .5;
   }
 
   &__image {

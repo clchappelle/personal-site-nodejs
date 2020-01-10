@@ -21,7 +21,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/foundation-funds", function(req, res) {
-  res.render("case_studies/foundation_funds");
+  res.render("case_studies/foundation_funds_02");
 });
 
 app.get("/increasing-awareness-and-engagement", function(req, res) {
