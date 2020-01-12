@@ -826,6 +826,9 @@ li {
   color: var(--color-primary-text);
   margin-bottom: 6rem; }
 
+.case-study__read-more {
+  background-color: var(--color-primary-bg); }
+
 .definition-badge {
   font-size: 1.4rem;
   text-transform: uppercase;
