@@ -5,11 +5,11 @@
   }
 
   &--foundation-funds {
-    background-image: linear-gradient(to right bottom, $color-cs1-1, $color-cs1-2);
+    background-image: linear-gradient(to right bottom, rgba($color-cs1-1, .2), rgba($color-cs1-2, .2));
   }
 
   &--engagement {
-    background-image: linear-gradient(to right bottom, $color-cs2-1, $color-cs2-2);
+    background-image: linear-gradient(to right bottom, rgba($color-cs2-1, .2), rgba($color-cs2-2, .2));
   }
 
   &__img {
