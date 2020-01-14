@@ -44,10 +44,13 @@
 
 <main class="content">
   <div class="about grid" id="about">
-    <article class="about__bio" data-aos="fade-up">
+    <article class="about__header" data-aos="fade-up">
       <h2 class="bio__header">
         👋 Chris Chappelle is a purposeful designer that believes in creating products that give people superpowers.
       </h2>
+    </article>
+
+    <article class="bio__description" data-aos="fade-up">
       <p>
         Products that help people be more generous, do things better, finish faster, and accomplish more.
       </p>
@@ -68,16 +71,6 @@
     </article>
   </div>
 
-  <div class="about__skills grid"  data-aos="fade-up">
-    <p class="grid--centered">As a fullstack product designer, I work through
-      <span class="about__skills-span"><img src="../images/home/icon-scoping.png" class="about__skills-icon" alt="Project scoping and ideation"> project scoping and ideation, </span>
-      <span class="about__skills-span"><img src="../images/home/icon-experience-design.png" class="about__skills-icon" alt="Experience design icon"> experience design,</span>
-      <span class="about__skills-span"><img src="../images/home/icon-ui-design.png" class="about__skills-icon" alt="UI design"> UI design, </span>
-      <span class="about__skills-span"><img src="../images/home/icon-prototyping.png" class="about__skills-icon" alt="Prototyping"> prototyping, and</span>
-      <span class="about__skills-span"><img src="../images/home/icon-implementation.png" class="about__skills-icon" alt="Design implementation"> design implementation.</span>
-    </p>
-  </div>
-
   <div class="principles" data-aos="fade-up">
     <h2 class="principles__title">Principles</h2>
 
@@ -93,6 +86,16 @@
 
   <div class="case-studies" id="case-studies">
     <%- include("partials/case-study-preview-list.ejs"); %>
+  </div>
+
+  <div class="about__skills grid"  data-aos="fade-up">
+    <p class="grid--centered">As a fullstack product designer, I work through
+      <span class="about__skills-span"><img src="../images/home/icon-scoping.png" class="about__skills-icon" alt="Project scoping and ideation"> project scoping and ideation, </span>
+      <span class="about__skills-span"><img src="../images/home/icon-experience-design.png" class="about__skills-icon" alt="Experience design icon"> experience design,</span>
+      <span class="about__skills-span"><img src="../images/home/icon-ui-design.png" class="about__skills-icon" alt="UI design"> UI design, </span>
+      <span class="about__skills-span"><img src="../images/home/icon-prototyping.png" class="about__skills-icon" alt="Prototyping"> prototyping, and</span>
+      <span class="about__skills-span"><img src="../images/home/icon-implementation.png" class="about__skills-icon" alt="Design implementation"> design implementation.</span>
+    </p>
   </div>
 </main>
 

@@ -582,43 +582,47 @@ li {
   transition: color 1s, background-color 1s; }
 
 .about {
-  padding: 10rem 3rem 0rem 3rem;
+  padding: 10rem 3rem 10rem 3rem;
   color: var(--color-primary-text);
   transition: color 1s, background-color 1s; }
 
-.about__bio {
-  grid-column: 5 / span 6;
+.about__header {
+  grid-column: 2 / span 10;
   grid-row: 1; }
-  @media only screen and (max-width: 1200px) {
-    .about__bio {
-      grid-column: 5 / span 7; } }
-  @media only screen and (max-width: 1000px) {
-    .about__bio {
-      grid-column: 2 / span 10; } }
-  @media only screen and (max-width: 375px) {
-    .about__bio {
-      grid-column: 1 / span 12; } }
 
 .bio__header {
-  font-size: 3.2rem;
+  font-size: 5rem;
   line-height: 1.5;
   font-weight: 400;
-  margin-bottom: 2rem; }
+  margin-bottom: 4rem; }
+  @media only screen and (max-width: 675px) {
+    .bio__header {
+      font-size: 4rem; } }
   @media only screen and (max-width: 375px) {
     .bio__header {
-      font-size: 2.8rem; } }
+      font-size: 3.2rem; } }
+
+.bio__description {
+  grid-column: 2 / span 4;
+  grid-row: 2; }
+  @media only screen and (max-width: 1000px) {
+    .bio__description {
+      grid-column: 2 / span 6; } }
+  @media only screen and (max-width: 675px) {
+    .bio__description {
+      grid-column: 2 / span 8; } }
+  @media only screen and (max-width: 475px) {
+    .bio__description {
+      grid-column: 2 / span 10; } }
 
 .about__contact {
-  grid-column: 2 / span 3;
-  grid-row: 1;
+  grid-column: 8 / span 3;
+  grid-row: 2;
   font-size: 2rem; }
   @media only screen and (max-width: 1000px) {
     .about__contact {
       grid-column: 2 / span 10;
-      grid-row: 2; } }
-  @media only screen and (max-width: 375px) {
-    .about__contact {
-      grid-column: 1 / span 12; } }
+      grid-row: 3; } }
 
 .about__contact__item {
   margin-bottom: 2rem; }
@@ -707,7 +711,8 @@ li {
     background-image: linear-gradient(to right bottom, rgba(86, 100, 123, 0.2), rgba(156, 179, 212, 0.2)); }
 
 .case-study__header-content {
-  padding: 10rem 3rem 3rem 3rem; }
+  padding: 10rem 3rem 3rem 3rem;
+  z-index: 999; }
   .case-study__header-content video {
     border: 15px solid black;
     border-radius: 10px;
