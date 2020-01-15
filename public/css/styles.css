@@ -714,8 +714,8 @@ li {
   padding: 10rem 3rem 3rem 3rem;
   z-index: 999; }
   .case-study__header-content video {
-    border: 15px solid black;
-    border-radius: 10px;
+    border: 6px solid black;
+    border-radius: 20px;
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.2); }
 
 .case-study__details {
